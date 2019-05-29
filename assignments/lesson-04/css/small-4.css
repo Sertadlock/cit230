@@ -1,0 +1,74 @@
+
+/* check this is going to change when mobile*/
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+/* check this is going to change when mobile*/
+@media screen and (max-width: 600px) {
+   .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+
+    nav {
+        overflow: hidden;
+        background-color: #968686;
+      }
+      
+      nav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+     
+      /* check .active has a class in main page*/
+      .active {
+        background-color: rgb(102, 83, 206);
+        color: white;
+      }
+      
+      /* check .icon has a class in main page*/
+      nav .icon {
+        display: none;
+      }
+
+
+header{
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body{
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+article{
+font-family: 'Merriweather', serif;
+
+}
+
+footer{
+
+font-family: 'PT Serif', serif;
+
+}
