@@ -1,0 +1,100 @@
+@media screen and (min-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+nav {
+    overflow: hidden;
+    background-color: #968686;
+  }
+     
+  nav ul{
+    list-style: none;
+    padding: 0px;
+  }
+  
+  
+  
+  nav a {
+  
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+        
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+       
+  /* check .active has a class in main page*/
+  .active {
+    background-color: rgb(102, 83, 206);
+    color: white;
+  }
+        
+  /* check .icon has a class in main page*/
+  nav .icon {
+    display: none;
+  }
+  
+  
+  .header{
+      display: inline-block;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  header img, .headings {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+     
+  }
+  
+  
+  
+  body{
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  
+  article{
+    font-family: 'Merriweather', serif;
+  
+  }
+  
+  footer{
+    font-family: 'PT Serif', serif;
+  }
+
+  .hero{
+
+    position: relative;
+  }
+
+  .summary{
+    position: absolute ;
+    top: 40px;
+    left: 40px;
+    width: 25%;
+    background: rgba(0, 151, 19, 0.6); 
+    /* background-color: opacity???*/
+    height: 200px;
+    font-size: 2.25em;
+
+  }
+
+
+  /*take this out for large
+  .fiveday{
+      display: none;
+     vertical-align: middle;
+  }
+*/
+

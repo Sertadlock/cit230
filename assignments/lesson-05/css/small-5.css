@@ -1,23 +1,6 @@
 /* check this is going to change when mobile*/
 
-@media screen and (max-width: 800px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
 
-/* check this is going to change when mobile*/
-@media screen and (max-width: 600px) {
-   .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-    }
-/* check this is going to change when mobile*/
 nav {
     overflow: hidden;
     background-color: #968686;
@@ -66,6 +49,7 @@ nav {
       display: inline-block;
       vertical-align: middle;
       margin: 10px;
+     
   }
   
   
@@ -82,4 +66,30 @@ nav {
   
   footer{
     font-family: 'PT Serif', serif;
+  }
+
+  .hero{
+
+    position: relative;
+  }
+
+  .summary{
+    position: absolute ;
+    top: 40px;
+    left: 40px;
+    width: 25%;
+    background: rgba(0, 151, 19, 0.6); 
+    /* background-color: opacity???*/
+    height: 200px;
+    font-size: 2.25em;
+
+  }
+
+
+  /*take this out for large*/
+
+  .fiveday{
+      display: none;
+     vertical-align: middle;
+
   }
