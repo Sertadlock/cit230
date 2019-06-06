@@ -2,11 +2,13 @@
 
 
 nav {
+    
     overflow: hidden;
     background-color: #968686;
   }
      
   nav ul{
+    display: block;
     list-style: none;
     padding: 0px;
   }
