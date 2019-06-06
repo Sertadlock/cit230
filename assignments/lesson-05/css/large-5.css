@@ -1,10 +1,13 @@
-@media screen and (min-width: 800px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
+/* check this is going to change when mobile*/
+@media only screen and (min-width: 32.5em) {
+  .navigation li:first-child { display: none;	}
+	.navigation li { display: inline-block; margin-right: 1rem;}	
+	.navigation li a { color: #fafaf8;}
+ 
+
+
+
+
 
 nav {
     overflow: hidden;
@@ -91,10 +94,11 @@ nav {
   }
 
 
-  /*take this out for large
+ 
   .fiveday{
-      display: none;
+     display: contents;
      vertical-align: middle;
   }
-*/
 
+
+}
