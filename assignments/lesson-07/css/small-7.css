@@ -1,0 +1,184 @@
+
+/* hamburger button*/
+
+nav button {
+  display: initial;
+  margin: .2rem 2%;
+  /*background-color: transparent;*/
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
+
+}
+
+nav ul.responsive {
+  display: block;
+}
+
+nav ul.responsive {
+  display: none;
+}
+
+
+nav {
+    overflow: hidden;
+    background-color: #968686;
+  }
+     
+  nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex; /*changed like video*/
+    flex-direction: column; /*changed like video*/
+
+  }
+  
+  nav ul li {
+    width: 100%;
+  }
+  
+  nav ul li a {
+    /* added display and flex direction ???*/
+    display: flex; /*changed like video*/
+    flex-direction: column; /*changed like video*/
+    /*  change? display: block; */
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(o,0,0.3);
+   
+  }
+  
+  nav a {
+  
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* check .active has a class in main page*/
+  .active {
+    background-color: rgb(102, 83, 206);
+    color: white;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+       
+  
+        
+  /* check .icon has a class in main page*/
+  nav .icon {
+    display: none;
+  }
+  
+  
+  .header{
+      display: inline-block;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  header img, .headings {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+     
+  }
+  
+  img {
+    width: 50%
+  }
+
+  .logo_1 {
+    width: 60px;
+
+  }
+  
+  body{
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  
+  article{
+    font-family: 'Merriweather', serif;
+  
+  }
+  
+  footer{
+    font-family: 'PT Serif', serif;
+  }
+
+  .hero{
+
+    position: relative;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  articl img {
+    width: 100%;
+    
+  }
+
+  .summary{
+    position: absolute ;
+    top: 40px;
+    left: 40px;
+    width: fit-content;
+    background: rgba(0, 151, 19, 0.6); 
+    /* background-color: opacity???*/
+    /* take out height height: 200px; */
+    font-size: 2.25em;
+
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    max-width: 66rem;
+  }
+  
+  .container > section {
+    background: #ddd;
+    padding: .5rem;
+    border: 1px solid #bbb;
+    margin-right: 2px;
+    overflow: auto;
+    /* max-height: 100px; */
+  }
+  
+
+  /* Below was added for gallary page*/
+  .container > section:nth-child(5) {
+    background: #bbeedd;
+  }
+  
+  .container > section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  figure {margin: 0;}
+  figcaption {font-size: .75rem;}
+
+  .norm:hover {box-shadow: 0 0 50px #333;}
+
+  /*end gallary page css*/
+
+
+  /*take this out for large*/
+
+  .fiveday{
+      display: none;
+     vertical-align: middle;
+
+  }
