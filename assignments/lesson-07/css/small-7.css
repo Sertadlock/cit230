@@ -157,6 +157,7 @@ nav {
   }
   
 
+
   /* Below was added for gallary page*/
   .container > section:nth-child(5) {
     background: #bbeedd;
@@ -170,8 +171,12 @@ nav {
   figure {margin: 0;}
   figcaption {font-size: .75rem;}
 
-  .norm:hover {box-shadow: 0 0 50px #333;}
+  
 
+  .container section img a:hover {
+    box-shadow: 5px 5px blue;
+  
+  }
   /*end gallary page css*/
 
 

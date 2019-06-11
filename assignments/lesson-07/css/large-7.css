@@ -134,7 +134,7 @@ nav {
   
 
   /*gallary page*/
-  .container {margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
+  .container {margin: 0px; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
 
 img { width: 100%; margin: .5rem;}
 figcaption {font-size: smaller;}
@@ -155,6 +155,7 @@ figcaption {font-size: smaller;}
 
 }
 
+/*I thought this did the shadow hover, then it didnt work...after it had worked...???*/
 .container section img a:hover {
   box-shadow: 5px 5px blue;
 
