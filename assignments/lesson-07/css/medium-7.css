@@ -1,5 +1,5 @@
 /* check this is going to change when mobile*/
-@media only screen and (min-width: 40.em) {
+@media only screen and (min-width: 500px) {
     .navigation li:first-child { display: none;	}
       .navigation li { display: inline-block; margin-right: 1rem;}	
       .navigation li a { color: #fafaf8;}
@@ -11,7 +11,7 @@
     display: none;
   }
 
-  .container {margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
+  .container {margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr; max-width: 1048px;}
 
 
   .clearfix:after {

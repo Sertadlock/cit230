@@ -87,7 +87,7 @@ nav {
   }
   
   img {
-    width: 50%
+    width: 50%;
   }
 
   .logo_1 {
@@ -132,5 +132,5 @@ nav {
   .fiveday{
       display: none;
      vertical-align: middle;
-
+     
   }

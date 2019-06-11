@@ -1,11 +1,14 @@
 /* check this is going to change when mobile*/
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 700px) {
   .navigation li:first-child { display: none;	}
 	.navigation li { display: inline-block; margin-right: 1rem;}	
 	.navigation li a { color: #fafaf8;}
  
 
-
+  nav ul {
+    flex-direction: row;
+    
+    }
 
 nav button{
   display: none;
@@ -133,7 +136,7 @@ nav {
   /*gallary page*/
   .container {margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
 
-img { width: 250px; height: auto; margin: .5rem;}
+img { width: 100%; margin: .5rem;}
 figcaption {font-size: smaller;}
 /* hover effect */
 .norm:hover {box-shadow: 0 0 50px #333;}
@@ -144,7 +147,21 @@ figcaption {font-size: smaller;}
 .blur {filter: blur(1px) grayscale(75%);}
 .object {width: 100%; height: 100px ; object-fit: cover;}
 .shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left; shape-outside: circle();}
+.fiveday img { width:100%; }
+
+.container section img {
+  width: 100%
+ 
+
+}
+
+.container section img a:hover {
+  box-shadow: 5px 5px blue;
+
+}
   
 /* end gallary page*/
+
+
 
 }
