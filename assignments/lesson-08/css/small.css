@@ -6,7 +6,7 @@ table {
     color: black;
     box-shadow: 10px 10px 10px 1px #6c93ab;
     border-collapse: collapse;
-    width: 45%;
+    max-width: 50%;
     text-align: center;
 
 }
@@ -17,7 +17,8 @@ table, th, td {
 thead {
     color: black;
     background-color: #7fb9c2;
-    font-size: 25px;
+    font-size: 20px;
+   
 }
 
 tfoot {
@@ -44,6 +45,7 @@ tr {
 .white {
     color: white;
     background-color: #628ca6;
+  
     
 }
 
