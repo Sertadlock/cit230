@@ -13,7 +13,7 @@
     <link href="css/medium-8.css" type="text/css" rel="stylesheet" />
     <link href="css/large-8.css" type="text/css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Serif|Source+Sans+Pro&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap"
         rel="stylesheet">
 
 </head>
@@ -25,7 +25,7 @@
         <img src="images.1/weather-2-icon-logo.png" alt="Bear the Brunt logo" title="Logo" class="logo_1" />
 
         <section class="headings">
-            <h1>Bear the Brunt</h1>
+            <h2>Bear the Brunt</h2>
             <!--Larger size font-->
             <p>We help you Weather its rain or shine</p>
         </section>
@@ -52,15 +52,15 @@
             <h2>Send us updates for Storm Conditions Near you!</h2>
 
             <label> Name:</label><br>
-            <input type="text" name="fullname" required><br><br>
+            <input type="text" name="fullname" pattern="[A-Za-z]" required><br><br>
 
-            <lable>Email:</label> <br>
-                <input type="email" name="email"><br><br>
+            <label>Email:</label> <br>
+                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">><br><br>
 
-                <lable>Phone number:</label><br>
+                <label>Phone number:</label><br>
                     <input type="tel" name="phonenumber" required><br><br>
 
-                    <lable>Zip Code</lable><br>
+                    <label>Zip Code</label><br>
                     <input type="number" name="zipcode" required><br><br>
 
                     <h2>Please Enter Storm Conditions</h2>
@@ -68,7 +68,7 @@
                     <label>Storm Date</label><br>
                     <input type="date" name="date"><br><br>
 
-                    <lable>Storm Type</lable><br>
+                    <label>Storm Type</label><br>
                     <input list="storm-type" id="storm-type-list" name="storm-type" />
                     <datalist id="storm-type">
                         <option value="Flash Flood">
@@ -78,25 +78,39 @@
                         <option value="Tornado">
                     </datalist><br><br>
 
-                    <lable>Storm Severity (1 to 10)</lable><br><br>
+                    <label>Storm Severity (1 to 10)</label><br><br>
                     <input type="range" id="rating" value="5" min="1" max="10" step="1"
                         oninput="changeRating(this.value)" onchange="changeRating(this.value)"><span
                         id="ratingvalue">5</span><br>
 
-       <!--Start back up here step 2 H-->                 
-                    <lable>Storm Region</lable><br>
-                    <input type="select" name="options" "Select Rigion..." "Preston" "Sugar City" "Fish Haven" />
+                    <!--Start back up here step 2 H-->
+                    <label>Storm Region</label><br>
+                    <input list="select" id="region" name="options" />
+                    <datalist id="select">
+                        <option value="Select Region">
+                        <option value="Preston">
+                        <option value="Sugar City">
+                        <option value="Fish Haven">
+                        </datalist>
+                  
+                    <br>
+                    <br>
+
+                    <label>User in-danger level</label><br>
+                    <input type="radio" name="Are you in Danger" value="Yes" checked>Yes<br>
+                    <input type="radio" name="Are you in Danger" value="No">No<br>
+                    <input type="radio" name="Are you in Danger" value="Maybe">Maybe<br>
+                    
+                <br><br>
 
 
-                    <lable>User in-danger level</lable><br>
-                    <input type="radio" options="Yes" "No" "Maybe" />
-
-
-                    <lable>Additional Information or Comments</lable>
-                    <input type="textarea" />
-
-                    <lable>Submit</lable>
-                    <input type="submit" />
+                    <label>Additional Information or Comments</label>
+                    <input type="text"/>
+<br>
+<br>
+                    <br>
+                    
+                    <input type="submit" formaction="thankyou.html" />
 
 
 

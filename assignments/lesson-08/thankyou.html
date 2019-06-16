@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment week 4 Sam Tadlock BYU-Idaho</title>
+    <meta name="description" content="Assignment for Sam Tadlock CIT 230: Front-end Development at BYU Idaho">
+
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/small-8.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium-8.css" type="text/css" rel="stylesheet" />
+    <link href="css/large-8.css" type="text/css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images.1/weather-2-icon-logo.png" alt="Bear the Brunt logo" title="Logo" class="logo_1" />
+
+        <section class="headings">
+            <p>Bear the Brunt</p>
+            <!--Larger size font-->
+            <p>We help you Weather its rain or shine</p>
+        </section>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navigation responsive">
+                <li><a href="index.html">Home</a></li>
+                <!--home shows up in small only. why?-->
+                <li><a href="index.html">Preston</a></li>
+                <li><a href="index.html">Soda Springs</a></li>
+                <li><a href="index.html">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+      <h1>Thank You for your submission. Stay safe.</h1>
+
+
+
+    </main>
+
+    <footer>
+        <section>
+            <div>
+                <h3>Contact Information</h3>
+                <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
+            </div>
+
+        </section>
+
+        <p id="date"></p>
+
+
+    </footer>
+
+    <script src="js_scripts/current_date.js"></script>
+    <script src="js_scripts/hamburger.js"></script>
+    <script src="js_scripts/windchill.js"></script>
+    <script src="js_scripts/storm_severity.js"></script>
+</body>
+
+</html>

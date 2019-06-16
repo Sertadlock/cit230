@@ -49,6 +49,8 @@ tr {
     
 }
 
+
+
 tbody tr:nth-child(odd) {
     background-color: #e7f0ed;
 }
