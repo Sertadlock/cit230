@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment week 4 | Sam Tadlock | BYU-Idaho</title>
+    <meta name="description" content="Assignment for Sam Tadlock CIT 230: Front-end Development at BYU Idaho">
+
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/small-9.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium-9.css" type="text/css" rel="stylesheet" />
+    <link href="css/large-9.css" type="text/css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Serif|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images.1/weather-2-icon-logo.png" alt="Bear the Brunt logo" title="Logo" class="logo_1" />
+
+        <section class="headings">
+            <h1>Bear the Brunt</h1>
+            <!--Larger size font-->
+            <p>We help you Weather its rain or shine</p>
+        </section>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston-9.html">Preston</a></li>
+                <li><a href="index.html">Soda Springs</a></li>
+                <li><a href="index.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+
+
+
+        <div class="contain_12 clearfix">
+            <div id=" feature" class="grid_12">
+                <p>Welcome</p>
+
+            </div>
+            <div class="article grid_4">
+                <script>
+                    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+                    //create new request object instance with constructor, keyword "new"
+                    var request = new XMLHttpRequest();
+                    //open a new request using open() menthod
+                    //takes two parameters, get is a method to make request, 
+                    //the second is the URL, which is stored in a variable above 
+                    request.open('GET', requestURL);
+                    request.responseType = 'json';
+                    request.send();
+                    request.onload = function () {
+                        var townInfo = request.response;
+                        showData(townInfo);
+
+                    }
+
+                    //This create and displays Hero cards
+                    function showData(jsonObj) {
+                        //Set members property (part of the object) to a new variable
+                        var towns = jsonObj['towns'];
+                        var displayTown = "Franlin";
+
+                        // go through each hero and create new elements to display
+                        for (var i = 0; i < towns.length; i++) {
+                            if (towns[i].name == displayTown)
+                            var myH2 = document.createElement('h2');
+                            var myPara1 = document.createElement('p');
+                            var myPara2 = document.createElement('p');
+                            var myPara3 = document.createElement('p');
+                            var myPara4 = document.createElement('p');
+                            //sets variable myH2 to heroes name for each loop. (textContext)
+                           // myH2.textContent = displayTown;
+                            //Fills paragraph variables above with properties for the specified hero
+                            myPara1.textContent = towns[i].motto;
+                            myPara2.textContent = "Year Founded" + towns[i].yearFounded;
+                            myPara3.textContent = "Current Population" + towns[i].currentPopulation;
+                            myPara4.textContent = "Annual Rain Fall" + towns[i].averageRainfall;
+
+                            document.getElementById('h2').innerHTML = myPara1;
+                        }
+
+                       // myArticle.appendChild(myH2);
+                       // myArticle.appendChild(myPara1);
+                       // myArticle.appendChild(myPara2);
+                       // myArticle.appendChild(myPara3);
+                      //  myArticle.appendChild(myPara4);
+
+
+                    }
+                </script>
+                <p>Franklin</p>
+                <p>Motto</p>
+                <p>Year Founded:</p>
+                <p>Population:</p>
+                <P>Annual Rain Fall</P>
+
+
+                <img src="images.1/franklin.jpeg" alt="Franklin" title="City of Franklin" />
+            </div>
+
+            <div class="article grid_4">
+                <p>Greenville</p>
+                <p>Motto</p>
+                <p>Year Founded:</p>
+                <p>Population:</p>
+                <P>Annual Rain Fall</P>
+                <img src="images.1/greenville.jpeg" alt="Greenville" title="City of Greenville" />
+            </div>
+
+            <div class="article grid_4">
+                <p>SpringField</p>
+                <p>Motto</p>
+                <p>Year Founded:</p>
+                <p>Population:</p>
+                <P>Annual Rain Fall</P>
+                <img src="images.1/springfield.jpeg" alt="SpringField" title="City of SpringField" />
+            </div>
+
+        </div>
+
+        </div>
+
+        <section>
+            <div>
+                <h3>Contact Information</h3>
+                <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p id="date"></p>
+
+
+    </footer>
+
+    <script src="JS_scripts/current_date.js"></script>
+    <script src="JS_scripts/hamburger.js"></script>
+    
+</body>
+
+</html>

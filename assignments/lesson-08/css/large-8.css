@@ -1,0 +1,168 @@
+/* check this is going to change when mobile*/
+@media only screen and (min-width: 700px) {
+  /*.navigation li:first-child { display: none;	}*/
+	.navigation li { display: inline-block; margin-right: 1rem;}	
+	.navigation li a { color: #fafaf8;}
+ 
+
+  nav ul {
+    flex-direction: row;
+    
+    }
+
+nav button{
+  display: none;
+}
+/* should remove reduncancy...
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  border: none;
+  border-right: 1px solid rgba(0,0,0,0.3);
+  padding: .6rem 1rem;
+
+}
+*/
+/*
+nav {
+    overflow: hidden;
+    background-color: #968686;
+  }
+  
+  /*
+  nav ul{
+    list-style: none;
+    padding: 0px;
+    margin-left: 2%;
+  }
+  */
+  /*
+  .repsonsive li {
+    display: block;
+  }
+
+  nav a {
+  
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+        
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+    */   
+  /* check .active has a class in main page*/
+  .active {
+    background-color: rgb(102, 83, 206);
+    color: white;
+  }
+        
+  /* check .icon has a class in main page*/
+  nav .icon {
+    display: none;
+  }
+  
+  
+  .header{
+      display: inline-block;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  header img, .headings {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+     
+  }
+  
+  
+ /* 
+  body{
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  
+  article{
+    font-family: 'Merriweather', serif;
+  
+  }
+  
+  footer{
+    font-family: 'PT Serif', serif;
+  }
+
+  .hero{
+
+    position: relative;
+  }
+
+  .summary{
+    position: absolute ;
+    top: 40px;
+    left: 40px;
+    width: 25%;
+    background: rgba(0, 151, 19, 0.6); 
+    /* background-color: opacity???
+    height: 200px;
+    font-size: 2.25em;
+
+  }
+
+*/
+ 
+  .fiveday{
+     display: contents;
+     vertical-align: middle;
+     width: fit-content;
+     margin: auto;
+     text-align: center;
+
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  /*gallary page*/
+  .container {margin: 0px; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
+
+img { width: 100%; margin: .5rem;}
+figcaption {font-size: smaller;}
+/* hover effect */
+.norm:hover {box-shadow: 0 0 50px #333;}
+/* rounded corners - boxmodel */
+.rocorn {border-radius: 5px 150px;}
+/* simple opacity */
+.opac {opacity: .5;}
+.blur {filter: blur(1px) grayscale(75%);}
+.object {width: 100%; height: 100px ; object-fit: cover;}
+.shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left; shape-outside: circle();}
+.fiveday img { width:100%; }
+
+.container section img {
+  width: 100%
+ 
+
+}
+
+/*I thought this did the shadow hover, then it didnt work...after it had worked...???*/
+.container section img a:hover {
+  box-shadow: 5px 5px blue;
+
+}
+  
+/* end gallary page*/
+
+
+
+}

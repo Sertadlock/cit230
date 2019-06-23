@@ -11,14 +11,6 @@ nav button {
 
 }
 
-nav ul.responsive {
-  display: block;
-}
-
-nav ul.responsive {
-  display: none;
-}
-
 
 nav {
     overflow: hidden;
@@ -49,6 +41,12 @@ nav {
     border-top: 1px solid rgba(0,0,0.3);
    
   }
+
+  .navigation li { display: none;}
+  
+nav ul.responsive li {
+  display: contents;
+}
   
   nav a {
   

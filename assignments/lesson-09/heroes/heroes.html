@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Our superheroes</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <section>
+
+  </section>
+
+  <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    //store the url with the JSON we want in a variable
+    var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+    //create new request object instance with constructor, keyword "new"
+    var request = new XMLHttpRequest();
+    //open a new request using open() menthod
+    //takes two parameters, get is a method to make request, 
+    //the second is the URL, which is stored in a variable above 
+    request.open('GET', requestURL);
+    //responseType to JSON so XHR knows returning JSON, 
+    //then send the request with send() method.
+    request.responseType = 'json';//sometimes this isn't possible
+    //because database only provides raw JSON String, 
+    //Parse() and Stringify() are then needed. see Bottom for example.
+    request.send();
+    //wait for response then process it into variables, 
+    //then pass it into two functions populateHeader and ShowHeroes.
+    //because we connected onload to the request 
+    //so that it happens when we send the request.
+    request.onload = function () {
+      var superHeroes = request.response;
+      populateHeader(superHeroes);
+      showHeroes(superHeroes);
+
+      //example:
+      // request.open('GET', requestURL);
+      // request.responseType = 'text'; // now we're getting a string!
+      // request.send();
+
+      //  request.onload = function () {
+      //   var superHeroesText = request.response; // get the string from the response
+      //   var superHeroes = JSON.parse(superHeroesText); // convert it to an object
+      //  populateHeader(superHeroes);
+      //  showHeroes(superHeroes);
+     //    }
+
+
+    }
+
+    //create an element (h1 or you pick), 
+    //set textContent to equal the property of the object we want to place, 
+    //then append it (appendChild() into the section we want (header)).
+    function populateHeader(jsonObj) {
+      var myH1 = document.createElement('h1');
+      myH1.textContent = jsonObj['squadName'];
+      header.appendChild(myH1);
+
+      //Same as above create,set textContent, append. 
+      //just with different data and properties.
+      var myPara = document.createElement('p');
+      myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+      header.appendChild(myPara);
+    }
+
+
+    //This create and displays Hero cards
+    function showHeroes(jsonObj) {
+      //Set members property (part of the object) to a new variable
+      var heroes = jsonObj['members'];
+      // go through each hero and create new elements to display
+      for (var i = 0; i < heroes.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myList = document.createElement('ul');
+        //sets variable myH2 to heroes name for each loop. (textContext)
+        myH2.textContent = heroes[i].name;
+        //Fills paragraph variables above with properties for the specified hero
+        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+        myPara2.textContent = 'Age: ' + heroes[i].age;
+        myPara3.textContent = 'Superpowers:';
+        //store powers property into new variable
+        var superPowers = heroes[i].powers;
+        //for loop to insert superpowers into a list
+        for (var j = 0; j < superPowers.length; j++) {
+          //create li put it into variable
+          var listItem = document.createElement('li');
+          //add data for each index
+          listItem.textContent = superPowers[j];
+          //add it into the ul which is a variable above.
+          myList.appendChild(listItem);
+        }
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+
+        section.appendChild(myArticle);
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

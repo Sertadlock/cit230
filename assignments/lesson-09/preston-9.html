@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment week 4 | Sam Tadlock | BYU-Idaho</title>
+    <meta name="description" content="Assignment for Sam Tadlock CIT 230: Front-end Development at BYU Idaho">
+
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/small-9.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium-9.css" type="text/css" rel="stylesheet" />
+    <link href="css/large-9.css" type="text/css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Serif|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images.1/weather-2-icon-logo.png" alt="Bear the Brunt logo" title="Logo" class="logo_1"/>
+
+        <section class="headings">
+            <h1>Bear the Brunt</h1> <!--Larger size font-->
+            <p>We help you Weather its rain or shine</p>
+        </section>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navigation responsive">
+                <li><a href="index.html">Home</a></li> <!--home shows up in small only. why?-->
+                <li class="active"><a href="index.html">Preston</a></li>
+                <li><a href="index.html">Soda Springs</a></li>
+                <li><a href="index.html">Fish Haven</a></li>
+                <li><a href="index.html">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Preston</h1>
+            <div class="hero">
+                <img src="images.1/preston-hero-resized.jpg" alt="Bear the Brunt Hero" title="Hero Image" />
+
+                <table class="summary">
+
+                    <tr>
+                        <th>Weather</th>  <!-- <span> columns-->
+                        <th>Summary</th>
+                    </tr>
+                    <tr>
+                        <td>Currently:</td>
+                        <td> Sunny</td>
+                    </tr>
+                    <tr>
+                        <td>High:</td>
+                        <td><span id="temperature">59</span> Degrees</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td><span id="output"></span> Degrees.</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity:</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td><span id="windSpeed">10</span></td>
+                    </tr>
+                </table>
+
+            </div>
+            <form>
+                <h3>Weather Summary</h3>
+
+            </form>
+        </div>
+
+        <div class="fiveday">
+
+            <h3>5 Day Forcast</h3>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                </tr>
+                <tr>
+                    <td>50 <img src="images.1/sunny-resized.png" alt="Sunny" title="Sunny" /></td>
+                    <td>50 <img src="images.1/sunny-resized.png" alt="Sunny" title="Sunny" /></td>
+                    <td>50 <img src="images.1/sunny-resized.png" alt="Sunny" title="Sunny" /></td>
+                    <td>50 <img src="images.1/sunny-resized.png" alt="Sunny" title="Sunny" /></td>
+                    <td>50 <img src="images.1/sunny-resized.png" alt="Sunny" title="Sunny" /></td>
+                </tr>
+
+
+
+
+
+
+            </table>
+
+
+        </div>
+
+        <article>
+            <h1>Weather the Storm</h1>
+            <h3>By Sam Tadlock</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolore asperiores, deserunt quidem
+                exercitationem optio veniam, ratione nemo beatae voluptates voluptate rem dolores aspernatur saepe eius.
+                Quam delectus illo architecto? </p>
+            <img src="images.1/article-image-storm-resized.jpg" alt="Bear the Brunt Article image"
+                title="Article Image" />
+        </article>
+
+
+        <section>
+            <div>
+                <h3>Contact Information</h3>
+                <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p id="date"></p> 
+
+
+    </footer>
+
+    <script src="JS_scripts/current_date.js"></script>
+    <script src="JS_scripts/hamburger.js"></script>
+    <script src="JS_scripts/windchill.js"></script>
+</body>
+
+</html>
