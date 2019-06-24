@@ -20,4 +20,16 @@
     clear: both;
   }
 
+  aside {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  aside article {
+    width: 31%;
+    
+  }
 }
+
+
