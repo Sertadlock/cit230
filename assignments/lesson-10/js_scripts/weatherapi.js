@@ -3,7 +3,20 @@ var table = document.createElement('table');
 var tbody = document.createElement('tbody');
 var thead = document.createElement('thead');
 
-
+function dayOfWeek(today) {
+    
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+  
+    var n = weekday[today];
+    return n;
+  }
 
 var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=f6deef6645c3c3ba07c23bcea37130c3&units=imperial';
 //create new request object instance with constructor, keyword "new"
@@ -26,6 +39,8 @@ var tr2 = document.createElement('tr');
 var tr3 = document.createElement('tr');
 var myimg = document.createElement('img');
 
+var d = new Date();
+var today = d.getDay();
 
 
     // go through each hero and create new elements to display
@@ -38,6 +53,11 @@ var myimg = document.createElement('img');
         
 
         if (time.includes('18:00:00')) {
+            if (today == 7) {
+                today = 0;
+            }
+            var dayName = dayOfWeek(today); console.log(dayName);
+            today++;
             console.log("found item");
             var temp = list[i].main.temp;
             var icon = list[i].weather[0].icon;
@@ -48,7 +68,7 @@ var myimg = document.createElement('img');
 
             myimg.setAttribute('src', path);
 
-            myth1.textContent = "Day"; //call function
+            myth1.textContent = dayName; //call function
             mytd1.textContent = temp ;
             mytd2.appendChild(myimg);
             
@@ -74,8 +94,4 @@ var myimg = document.createElement('img');
     console.log(thead,tbody);
 }
 
-function dayOfWeek() {
-    var d = new day();
-    document.getElementById("date").innerHTML = d.toUTCString();
 
-}
