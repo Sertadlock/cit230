@@ -1,12 +1,11 @@
 
 // formula for converting to windchill factor
 
-var tempF = parseFloat(document.getElementById('temperature').innerHTML);
-var speed = parseFloat(document.getElementById('windSpeed').innerHTML);
+var tempF = document.getElementById('temperature').innerHTML;
+var speed =document.getElementById('windSpeed').innerHTML;
 var result = windChill(tempF, speed);
 
-document.getElementById('output').innerHTML =
-result;
+document.getElementById('output').innerHTML = result;
 
 
 function windChill(tempF, speed) {
