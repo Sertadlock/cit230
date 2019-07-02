@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Assignment week 4  Sam Tadlock  BYU-Idaho</title>
+    <meta name="description" content="Assignment for Sam Tadlock CIT 230: Front-end Development at BYU Idaho">
+
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/small-10.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium-10.css" type="text/css" rel="stylesheet" />
+    <link href="css/large-10.css" type="text/css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Serif|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images.1/weather-2-icon-logo.png" alt="Bear the Brunt logo" title="Logo" class="logo_1" />
+
+        <section class="headings">
+            <h1>Bear the Brunt</h1>
+            <!--Larger size font-->
+            <p>We help you Weather its rain or shine</p>
+        </section>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="index.html">Soda Springs</a></li>
+                <li><a href="index.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-10.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+
+
+
+        <div class="contain_12 clearfix">
+            <div id=" feature" class="grid_12">
+                <p>Welcome</p>
+
+            </div>
+            
+           
+
+        </div>
+
+        <aside> <!--Json data here--></aside>
+
+        <section>
+            <div>
+                <h3>Contact Information</h3>
+                <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Weather information provided by <a href="https://openweathermap.org/">Openweathermap.org</a></p>
+        <p id="date"></p>
+
+
+    </footer>
+
+    <script src="JS_scripts/current_date.js"></script>
+    <script src="JS_scripts/hamburger.js"></script>
+    <script src="js_scripts/json.js"></script>
+</body>
+
+</html>
