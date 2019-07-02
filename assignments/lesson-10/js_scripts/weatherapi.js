@@ -33,14 +33,39 @@ request.onload = function () {
     console.log(weather);
     var list = weather.list;
     console.log(list);
-    
+
+
+ //for the 5 day forcast
+
 var tr1 = document.createElement('tr');
 var tr2 = document.createElement('tr');
 var tr3 = document.createElement('tr');
 var myimg = document.createElement('img');
 
+//variables for the days of the five day forcast
 var d = new Date();
 var today = d.getDay();
+console.log(today);
+
+
+
+
+//Id selected and set to variables for Current stats
+var currently = document.getElementById('currently');
+var temp = document.getElementById('temperature');
+var humidity = document.getElementById('humidity');
+var windSpeed = document.getElementById('windSpeed');
+
+
+currently.textContent = list[5].weather[0].description;
+temp.textContent = list[5].main.temp;
+humidity.textContent = list[5].main.humidity;
+windSpeed.textContent = list[5].wind.speed;
+
+
+
+
+
 
 
     // go through each hero and create new elements to display

@@ -37,6 +37,7 @@ function showData(jsonObj) {
             var myPara3 = document.createElement('p');
             var myPara4 = document.createElement('p');
             var myImage = document.createElement('img');
+            var townEvents = document.createElement('article');
             if (towns[i].name == "Franklin") {
                 myImage.setAttribute('src', 'images.1/franklin-original.jpg');
                 myImage.setAttribute('alt', 'Franklin');
@@ -61,8 +62,7 @@ function showData(jsonObj) {
             myPara2.textContent = "Year Founded" + towns[i].yearFounded;
             myPara3.textContent = "Current Population" + towns[i].currentPopulation;
             myPara4.textContent = "Annual Rain Fall" + towns[i].averageRainfall;
-
-
+            townEvents.textContent = "Town Events    " + towns[i].events.toString();
 
             myArticle.appendChild(myH2);
             myArticle.appendChild(myPara1);
@@ -70,6 +70,8 @@ function showData(jsonObj) {
             myArticle.appendChild(myPara3);
             myArticle.appendChild(myPara4);
             myArticle.appendChild(myImage);
+            myArticle.appendChild(townEvents);
+
             aside.appendChild(myArticle);
 
         }
