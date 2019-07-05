@@ -4,6 +4,9 @@
 	.navigation li { display: inline-block; margin-right: 1rem;}	
 	.navigation li a { color: #fafaf8;}
  
+nav ul.responsive {
+  display: flex;
+}
 
   nav ul {
     flex-direction: row;
