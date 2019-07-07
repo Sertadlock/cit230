@@ -63,7 +63,7 @@ nav button{
   /*gallary page*/
   .container {margin: 0px; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
 
-img { width: 100%; padding: .5rem;}
+img { width: 90%; padding: .5rem;}
 figcaption {font-size: smaller;}
 /* hover effect */
 .norm:hover {box-shadow: 0 0 50px #333;}
@@ -74,16 +74,16 @@ figcaption {font-size: smaller;}
 .blur {filter: blur(1px) grayscale(75%);}
 .object {width: 100%; height: 100px ; object-fit: cover;}
 .shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left; }
-.fiveday img { width:100%; }
+.fiveday img { width:100px; }
 
 .container section img {
-  width: 100%
+  width: 90%
  
 
 }
 
 /*I thought this did the shadow hover, then it didnt work...after it had worked...???*/
-.container section img a:hover {
+.container section img :hover {
   box-shadow: 5px 5px blue;
 
 }
@@ -96,7 +96,7 @@ figcaption {font-size: smaller;}
   background-color: #efefef;
   margin-top: 20px;
   padding: 10px 0px 5px 0px;
-  height: fit-content;
+  /* height: fit-content; */
   display: inline-block;
   width: 33%;
   

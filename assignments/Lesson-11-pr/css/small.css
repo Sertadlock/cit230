@@ -21,8 +21,8 @@ nav {
     list-style: none;
     padding: 0px;
     margin: 0;
-    display: flex; /*changed like video*/
-    flex-direction: column; /*changed like video*/
+    display: flex; 
+    flex-direction: column; 
 
   }
   
@@ -31,10 +31,9 @@ nav {
   }
   
   nav ul li a {
-    /* added display and flex direction ???*/
-    display: flex; /*changed like video*/
-    flex-direction: column; /*changed like video*/
-    /*  change? display: block; */
+   
+    display: flex; 
+    flex-direction: column; 
     padding: .8rem 2%;
     text-decoration: none;
     color: #000;
@@ -58,7 +57,7 @@ nav ul.responsive li {
     font-size: 17px;
   }
   
-  /* check .active has a class in main page*/
+  
   .active {
     background-color: rgb(102, 83, 206);
     color: white;
@@ -71,7 +70,7 @@ nav ul.responsive li {
        
   
         
-  /* check .icon has a class in main page*/
+  
   nav .icon {
     display: none;
   }
@@ -133,9 +132,7 @@ nav ul.responsive li {
     top: 40px;
     left: 40px;
     width: fit-content;
-    background: rgba(0, 151, 19, 0.6); 
-    /* background-color: opacity???*/
-    /* take out height height: 200px; */
+    background: rgba(0, 151, 19, 0.6);
     font-size: 2.25em;
 
   }
@@ -153,7 +150,7 @@ nav ul.responsive li {
     border: 1px solid #bbb;
     margin-right: 2px;
     overflow: auto;
-    /* max-height: 100px; */
+    
   }
   
 
@@ -165,7 +162,8 @@ nav ul.responsive li {
   
   .container > section img {
     width: 50%;
-    height: auto;
+    min-width: 400px;
+   
   }
   
   figure {margin: 0;}
@@ -203,7 +201,8 @@ nav ul.responsive li {
   }
 
   aside img {
-    width: 100%;
+    width: 90%;
+    min-width: 100px;
   
     
   }

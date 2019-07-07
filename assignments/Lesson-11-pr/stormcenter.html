@@ -13,8 +13,8 @@
     <link href="css/medium.css" type="text/css" rel="stylesheet" />
     <link href="css/large.css" type="text/css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap"
+        rel="stylesheet"> -->
 
 </head>
 
@@ -52,8 +52,8 @@
             <h2>Send us updates for Storm Conditions Near you!</h2>
 
             <label> Name: (Required)</label><br>
-            <input type="text" name="fullname" pattern="[A-Za-z ]" required><br><br>
-            <!--fix this -->
+            <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required><br><br>
+            
 
             <label>Email:</label> <br>
             <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
