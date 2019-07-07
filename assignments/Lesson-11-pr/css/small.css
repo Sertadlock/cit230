@@ -1,6 +1,14 @@
 
 /* hamburger button*/
 
+main {
+  margin-left: 20px;
+ 
+  
+
+}
+
+
 nav button {
   display: initial;
   margin: .2rem 2%;
@@ -100,6 +108,7 @@ nav ul.responsive li {
   body{
       font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+    
   }
   
   
@@ -110,6 +119,8 @@ nav ul.responsive li {
   
   footer{
     font-family: 'PT Serif', serif;
+    margin-left: 20px;
+
   }
 
   .hero{
