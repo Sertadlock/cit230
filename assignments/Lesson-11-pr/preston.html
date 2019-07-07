@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>CIT 230 Assignment week 4 | Sam Tadlock | BYU-Idaho</title>
-    <meta name="description" content="Assignment for Sam Tadlock CIT 230: Front-end Development at BYU Idaho">
+    <title>CIT 230 Sam Tadlock BYU-Idaho</title>
+    <meta name="description" content="Weather data for Preston Idaho">
 
     <link href="css/normalize.css" type="text/css" rel="stylesheet" />
 
-    <link href="css/small-10.css" type="text/css" rel="stylesheet" />
-    <link href="css/medium-10.css" type="text/css" rel="stylesheet" />
-    <link href="css/large-10.css" type="text/css" rel="stylesheet" />
+    <link href="css/small.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium.css" type="text/css" rel="stylesheet" />
+    <link href="css/large.css" type="text/css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Serif|Source+Sans+Pro&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap"
         rel="stylesheet">
 
 </head>
@@ -34,11 +34,11 @@
             <button onclick="toggleMenu()">&#9776;</button>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="preston-10.html">Preston</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
                 <li><a href="soda-springs.html">Soda Springs</a></li>
                 <li><a href="fish-haven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-10.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
 
         </nav>
@@ -51,8 +51,6 @@
                 <img src="images.1/preston-hero-resized.jpg" alt="Bear the Brunt Hero" title="Hero Image" />
 
                 <table class="summary">
-
-
                     <tr>
                         <th>Weather</th>
                         <th>Summary</th>
@@ -63,13 +61,12 @@
                     </tr>
                     <tr>
                         <td>High:</td>
-                        <td><span id="temperature">59</span> &#8457</td> <!--display sign html-->
-
-
+                        <td><span id="temperature">59</span> &#8457;</td>
+                        <!--display sign html-->
                     </tr>
                     <tr>
                         <td>Wind Chill</td>
-                        <td><span id="output"></span> &#8457</td>
+                        <td><span id="output"></span> &#8457;</td>
                     </tr>
                     <tr>
                         <td>Humidity:</td>
@@ -90,11 +87,11 @@
 
         <div class="fiveday">
 
-            <h3>5 Day Forcast</h3>
+                <h3 class="fiveday">5 Day Forcast</h3>
             <aside>
+                   
 
-
-        </aside>
+            </aside>
 
 
         </div>
@@ -102,17 +99,20 @@
         <article>
             <h1>Weather the Storm</h1>
             <h3>By Sam Tadlock</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolore asperiores, deserunt quidem
-                exercitationem optio veniam, ratione nemo beatae voluptates voluptate rem dolores aspernatur saepe eius.
-                Quam delectus illo architecto? </p>
+            <p>The stome was intense but everything turned out ok. </p>
             <img src="images.1/article-image-storm-resized.jpg" alt="Bear the Brunt Article image"
-                title="Article Image" />
+                title="Storms" />
         </article>
 
 
         <section>
-            <div>
+            <div class="contact">
                 <h3>Contact Information</h3>
+                <div>
+                    <p>1234 main street</p>
+                    <p>909-555-5555</p>
+                    <p>Email: info@someemail.com</p>
+                </div>
                 <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
             </div>
 
@@ -122,16 +122,17 @@
 
     <footer>
 
-            <p>Weather information provided by <a href="https://openweathermap.org/">Openweathermap.org</a></p>
+        <p>Weather information provided by <a href="https://openweathermap.org/">Openweathermap.org</a></p>
         <p id="date"></p>
 
 
     </footer>
 
-    <script src="JS_scripts/current_date.js"></script>
-    <script src="JS_scripts/hamburger.js"></script>
-    <script src="JS_scripts/windchill.js"></script>
+    <script src="js_scripts/current_date.js"></script>
+    <script src="js_scripts/hamburger.js"></script>
+    <script src="js_scripts/windchill.js"></script>
     <script src="js_scripts/weatherapi.js"></script>
+    <!-- <script src="js_scripts/current-preston.js"></script> -->
 </body>
 
 </html>

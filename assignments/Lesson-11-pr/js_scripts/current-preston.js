@@ -1,5 +1,3 @@
-
-
 //var header = document.querySelector('header'); look for this section in html
 //var section = document.querySelector('section');
 var aside = document.querySelector('aside'); //look for this section in html

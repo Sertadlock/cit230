@@ -63,7 +63,7 @@ nav button{
   /*gallary page*/
   .container {margin: 0px; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1048px;}
 
-img { width: 100%; margin: .5rem;}
+img { width: 100%; padding: .5rem;}
 figcaption {font-size: smaller;}
 /* hover effect */
 .norm:hover {box-shadow: 0 0 50px #333;}
@@ -73,7 +73,7 @@ figcaption {font-size: smaller;}
 .opac {opacity: .5;}
 .blur {filter: blur(1px) grayscale(75%);}
 .object {width: 100%; height: 100px ; object-fit: cover;}
-.shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left; shape-outside: circle();}
+.shape-outside {border-radius: 100px; width:35%; margin: 0 3em .5em 0; float:left; }
 .fiveday img { width:100%; }
 
 .container section img {
@@ -103,9 +103,14 @@ figcaption {font-size: smaller;}
 }
 
 aside img {
-  width: 100%;
-  height: 200px;
+  width: 90%;
+ 
   
 }
+  
+ section img {
+    width: 50%;
+    height: auto;
+  }
 
 }

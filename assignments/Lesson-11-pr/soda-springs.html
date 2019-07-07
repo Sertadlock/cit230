@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 230 Sam Tadlock BYU-Idaho</title>
+    <meta name="description" content="Weather data for Soda Springs Idaho">
+
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/small.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium.css" type="text/css" rel="stylesheet" />
+    <link href="css/large.css" type="text/css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images.1/weather-2-icon-logo.png" alt="Bear the Brunt logo" title="Logo" class="logo_1" />
+
+        <section class="headings">
+            <h1>Bear the Brunt</h1>
+            <!--Larger size font-->
+            <p>We help you Weather its rain or shine</p>
+        </section>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="soda-springs.html">Soda Springs</a></li>
+                <li ><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Soda Springs</h1>
+            <div class="hero">
+                <img src="images.1/preston-hero-resized.jpg" alt="Bear the Brunt Hero" title="Hero Image" />
+
+                <table class="summary">
+                    <tr>
+                        <th>Weather</th>
+                        <th>Summary</th>
+                    </tr>
+                    <tr>
+                        <td>Currently:</td>
+                        <td><span id="currently">Sunny</span> </td>
+                    </tr>
+                    <tr>
+                        <td>High:</td>
+                        <td><span id="temperature">59</span> &#8457;</td>
+                        <!--display sign html-->
+                    </tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td><span id="output"></span> &#8457;</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity:</td>
+                        <td><span id="humidity">70%</span></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td><span id="windSpeed">10</span> mph</td>
+                    </tr>
+                </table>
+
+            </div>
+            <form>
+                <h3>Weather Summary</h3>
+
+            </form>
+        </div>
+
+        <div class="fiveday">
+
+                <h3 class="fiveday">5 Day Forcast</h3>
+            <aside>
+                   
+
+            </aside>
+
+
+        </div>
+
+        <article>
+            <h1>Weather the Storm</h1>
+            <h3>By Sam Tadlock</h3>
+            <p>The stome was intense but everything turned out ok. </p>
+            <img src="images.1/article-image-storm-resized.jpg" alt="Bear the Brunt Article image"
+                title="Storms" />
+        </article>
+
+
+        <section>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <div>
+                    <p>1234 main street</p>
+                    <p>909-555-5555</p>
+                    <p>Email: info@someemail.com</p>
+                </div>
+                <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Weather information provided by <a href="https://openweathermap.org/">Openweathermap.org</a></p>
+        <p id="date"></p>
+
+
+    </footer>
+
+    <script src="js_scripts/current_date.js"></script>
+    <script src="js_scripts/hamburger.js"></script>
+    <script src="js_scripts/windchill.js"></script>
+    <script src="js_scripts/current-sodasprings.js"></script>
+   
+</body>
+
+</html>

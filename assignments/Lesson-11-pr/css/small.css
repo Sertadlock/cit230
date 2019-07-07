@@ -1,63 +1,222 @@
 
+/* hamburger button*/
 
-
-table {
-    font-family: 'ubuntu', sans-serif;
-    color: black;
-    box-shadow: 10px 10px 10px 1px #6c93ab;
-    border-collapse: collapse;
-    max-width: 50%;
-    text-align: center;
+nav button {
+  display: initial;
+  margin: .2rem 2%;
+  /*background-color: transparent;*/
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
 
 }
-table, th, td {
-    border: 1px solid #bbbbbb;    
+
+
+nav {
+    overflow: hidden;
+    background-color: #968686;
+  }
+     
+  nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex; /*changed like video*/
+    flex-direction: column; /*changed like video*/
+
+  }
+  
+  nav ul li {
+    width: 100%;
+  }
+  
+  nav ul li a {
+    /* added display and flex direction ???*/
+    display: flex; /*changed like video*/
+    flex-direction: column; /*changed like video*/
+    /*  change? display: block; */
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0.3);
+   
   }
 
-thead {
-    color: black;
-    background-color: #7fb9c2;
-    font-size: 20px;
-   
+  .navigation li { display: none;}
+  
+nav ul.responsive li {
+  display: contents;
 }
-
-tfoot {
-    color: black;
-    background-color: #7fb9c2;
-  font-size: 12px;
-}
-
-tbody {
-    color:black;
-    background-color: #e7ffed;
-
-}
-
-th {
-height: 35px;
-text-align: center;
-
-}
-
-tr {
-    height: 35px;
-}
-.white {
+  
+  nav a {
+  
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* check .active has a class in main page*/
+  .active {
+    background-color: rgb(102, 83, 206);
     color: white;
-    background-color: #628ca6;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+       
+  
+        
+  /* check .icon has a class in main page*/
+  nav .icon {
+    display: none;
+  }
+  
+  
+  .header{
+      display: inline-block;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  header img, .headings {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+     
+  }
+  
+  img {
+    width: 50%
+  }
+
+  .logo_1 {
+    width: 60px;
+
+  }
+  
+  body{
+      font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  
+  article{
+    font-family: 'Merriweather', serif;
+  
+  }
+  
+  footer{
+    font-family: 'PT Serif', serif;
+  }
+
+  .hero{
+
+    position: relative;
+  }
+
+  .hero img {
+    width: 50%;
+    min-width: 400px;
+  }
+
+  article img {
+    width: 50%;
+    
+  }
+
+  .summary{
+    position: absolute ;
+    top: 40px;
+    left: 40px;
+    width: fit-content;
+    background: rgba(0, 151, 19, 0.6); 
+    /* background-color: opacity???*/
+    /* take out height height: 200px; */
+    font-size: 2.25em;
+
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    max-width: 66rem;
+  }
+  
+  .container > section {
+    background: #ddd;
+    padding: .5rem;
+    border: 1px solid #bbb;
+    margin-right: 2px;
+    overflow: auto;
+    /* max-height: 100px; */
+  }
+  
+
+
+  /* Below was added for gallary page*/
+  .container > section:nth-child(5) {
+    background: #bbeedd;
+  }
+  
+  .container > section img {
+    width: 50%;
+    height: auto;
+  }
+  
+  figure {margin: 0;}
+  figcaption {font-size: .75rem;}
+
+  
+
+  .container section img a:hover {
+    box-shadow: 5px 5px blue;
+  
+  }
+  /*end gallary page css*/
+
+  /*Star for Storm Center*/
+
+  form {
+    margin: 30px;
+  }
+
+
+  /*take this out for large*/
+
+  .fiveday{
+      display: none;
+     vertical-align: middle;
+
+  }
+
+  aside {
+  text-align: center;
+ display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+
+  aside img {
+    width: 100%;
   
     
-}
+  }
 
+  .contact {
+    display: inline;
+  }
 
+  /* .welcome {
+    /* align-content: center;
+     } */
+  
 
-tbody tr:nth-child(odd) {
-    background-color: #e7f0ed;
-}
-
-
-
-
-
-
-
+  form {
+    padding: 5px;
+  }

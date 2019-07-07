@@ -9,9 +9,9 @@
 
     <link href="css/normalize.css" type="text/css" rel="stylesheet" />
 
-    <link href="css/small-10.css" type="text/css" rel="stylesheet" />
-    <link href="css/medium-10.css" type="text/css" rel="stylesheet" />
-    <link href="css/large-10.css" type="text/css" rel="stylesheet" />
+    <link href="css/small.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium.css" type="text/css" rel="stylesheet" />
+    <link href="css/large.css" type="text/css" rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap"
         rel="stylesheet">
@@ -35,11 +35,11 @@
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <!--home shows up in small only. why?-->
-                <li><a href="preston-10.html">Preston</a></li>
-                <li><a href="index.html">Soda Springs</a></li>
-                <li><a href="index.html">Fish Haven</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
                 <li class="active"><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-10.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
 
         </nav>
@@ -51,81 +51,76 @@
 
             <h2>Send us updates for Storm Conditions Near you!</h2>
 
-            <label> Name:</label><br>
-            <input type="text" name="fullname" pattern="[A-Za-z]" required><br><br>
+            <label> Name: (Required)</label><br>
+            <input type="text" name="fullname" pattern="[A-Za-z ]" required><br><br>
+            <!--fix this -->
 
             <label>Email:</label> <br>
-                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">><br><br>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
 
-                <label>Phone number:</label><br>
-                    <input type="tel" name="phonenumber" required><br><br>
+            <label>Phone number: (Required)</label><br>
+            <input type="tel" name="phonenumber" required><br><br>
 
-                    <label>Zip Code</label><br>
-                    <input type="number" name="zipcode" required><br><br>
+            <label>Zip Code: (Required)</label><br>
+            <input type="number" name="zipcode" required><br><br>
 
-                    <h2>Please Enter Storm Conditions</h2>
+            <h2>Please Enter Storm Conditions</h2>
 
-                    <label>Storm Date</label><br>
-                    <input type="date" name="date"><br><br>
+            <label>Storm Date</label><br>
+            <input type="date" name="date"><br><br>
 
-                    <label>Storm Type</label><br>
-                    <input list="storm-type" id="storm-type-list" name="storm-type" />
-                    <datalist id="storm-type">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist><br><br>
+            <label>Storm Type</label><br>
+            <input list="storm-type" id="storm-type-list" name="storm-type" />
+            <datalist id="storm-type">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist><br><br>
 
-                    <label>Storm Severity (1 to 10)</label><br><br>
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
-                        oninput="changeRating(this.value)" onchange="changeRating(this.value)"><span
-                        id="ratingvalue">5</span><br>
+            <label>Storm Severity (1 to 10)</label><br><br>
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="changeRating(this.value)"
+                onchange="changeRating(this.value)"><span id="ratingvalue">5</span><br>
 
-                    <!--Start back up here step 2 H-->
-                    <label>Storm Region</label><br>
-                    <input list="select" id="region" name="options" />
-                    <datalist id="select">
-                        <option value="Select Region">
-                        <option value="Preston">
-                        <option value="Sugar City">
-                        <option value="Fish Haven">
-                        </datalist>
-                  
-                    
-                    <br>
-
-                    <label>User in-danger level</label><br>
-                    <input type="radio" name="Are you in Danger" value="Yes" checked>Yes<br>
-                    <input type="radio" name="Are you in Danger" value="No">No<br>
-                    <input type="radio" name="Are you in Danger" value="Maybe">Maybe<br>
-                    
-                <br><br>
+            <label>Storm Region</label><br>
+            <input list="select" id="region" name="options" />
+            <datalist id="select">
+                <option value="Select Region">
+                <option value="Preston">
+                <option value="Soda Springs">
+                <option value="Fish Haven">
+            </datalist>
+            <br>
+            <label>User in-danger level</label><br>
+            <input type="radio" name="Are you in Danger" value="Yes" checked>Yes<br>
+            <input type="radio" name="Are you in Danger" value="No">No<br>
+            <input type="radio" name="Are you in Danger" value="Maybe">Maybe<br>
+            <br><br>
+            <label>Additional Information or Comments</label><br>
+            <textarea rows="5" cols="37"> </textarea>
+            <br>
 
 
-                    <label>Additional Information or Comments</label>
-                    <input type="text"/>
-<br>
-<br>
-                    <br>
-                    
-                    <input type="submit" formaction="thankyou.html" />
-
-
+            <input type="submit" formaction="thankyou.html" />
         </form>
 
     </main>
 
     <footer>
         <section>
-            <div>
+            <div class="contact">
                 <h3>Contact Information</h3>
+                <div>
+                    <p>1234 main street</p>
+                    <p>909-555-5555</p>
+                    <p>Email: info@someemail.com</p>
+                </div>
                 <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
             </div>
 
         </section>
-
+        <p>Weather information provided by <a href="https://openweathermap.org/">Openweathermap.org</a></p>
         <p id="date"></p>
 
 
@@ -133,7 +128,6 @@
 
     <script src="js_scripts/current_date.js"></script>
     <script src="js_scripts/hamburger.js"></script>
-    <script src="js_scripts/windchill.js"></script>
     <script src="js_scripts/storm_severity.js"></script>
 </body>
 

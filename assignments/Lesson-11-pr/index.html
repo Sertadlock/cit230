@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>CIT 230 Assignment week 4  Sam Tadlock  BYU-Idaho</title>
-    <meta name="description" content="Assignment for Sam Tadlock CIT 230: Front-end Development at BYU Idaho">
+    <title>CIT 230 Assignment week 4 Sam Tadlock BYU-Idaho</title>
+    <meta name="description" content="Home page Bear the Brunt">
 
     <link href="css/normalize.css" type="text/css" rel="stylesheet" />
 
-    <link href="css/small-10.css" type="text/css" rel="stylesheet" />
-    <link href="css/medium-10.css" type="text/css" rel="stylesheet" />
-    <link href="css/large-10.css" type="text/css" rel="stylesheet" />
+    <link href="css/small.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium.css" type="text/css" rel="stylesheet" />
+    <link href="css/large.css" type="text/css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Serif|Source+Sans+Pro&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Merriweather/PT+Serif/Source+Sans+Pro&display=swap"
         rel="stylesheet">
 
 </head>
@@ -34,11 +34,11 @@
             <button onclick="toggleMenu()">&#9776;</button>
             <ul class="navigation">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="preston-10.html">Preston</a></li>
-                <li><a href="index.html">Soda Springs</a></li>
-                <li><a href="index.html">Fish Haven</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-10.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
 
         </nav>
@@ -50,20 +50,27 @@
 
 
         <div class="contain_12 clearfix">
-            <div id=" feature" class="grid_12">
-                <p>Welcome</p>
+            <div id="feature" class="grid_12">
+                <p class="welcome">Welcome</p>
 
             </div>
-            
-           
+
+
 
         </div>
 
-        <aside> <!--Json data here--></aside>
+        <aside>
+            <!--Json data here-->
+        </aside>
 
         <section>
-            <div>
+            <div class="contact">
                 <h3>Contact Information</h3>
+                <div>
+                    <p>1234 main street</p>
+                    <p>909-555-5555</p>
+                    <p>Email: info@someemail.com</p>
+                </div>
                 <img src="images.1/preston-map-image-resized.jpg" alt="Bear the Brunt Map image" title="Map Image" />
             </div>
 
@@ -79,8 +86,8 @@
 
     </footer>
 
-    <script src="JS_scripts/current_date.js"></script>
-    <script src="JS_scripts/hamburger.js"></script>
+    <script src="js_scripts/current_date.js"></script>
+    <script src="js_scripts/hamburger.js"></script>
     <script src="js_scripts/json.js"></script>
 </body>
 
