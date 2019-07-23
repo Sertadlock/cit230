@@ -2,32 +2,9 @@
     "temples": [
       {
         "name": "Indianapolis Indiana Temple",
-        "address": "11565 Temple Dr., Carmel IN 46032",
-        "telephone": "(317) 993-3800",
-        "email": "Log in to churchofjesuschrist.org to send email to temple",
-        "services": [
-          "No clothing rental available",
-          "No cafeteria available",
-          "No patron housing available",
-          "No distribution center nearby"
-        ],
-        "history": [
-          "2 October 2010 - Announced",
-          "29 September 2012 - Groundbreaking",
-          "23 August 2015 - Dedicated"
-        ],
-        "ordSched": [
-          "Living or Group Ordinances: By Appointment",
-          "Baptistry: Wednesday, Friday, Saturday",
-          "Other Ordiances: Tuesday - Saturday"
-        ],
-        "sesSched": [
-          "Tuesday & Friday: 6:00pm, 7:30pm",
-          "Wednesday & Friday: 10:00am, 12:00pm, 6:00pm, 7:30pm",
-          "Saturday: 8:30am, 10:00am, 12:00pm, 1:30pm"
-        ],
+        
         "closureSchedule": [
-          "4 July 2019",
+          "4, July 2019",
           "26 August - 9 September 2019",
           "5 October 2019",
           "27-28 November 2019",
