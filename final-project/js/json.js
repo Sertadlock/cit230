@@ -1,5 +1,5 @@
-window.onload = fillClosure();
-function fillClosure() {
+// window.onload = fillClosure();
+// function fillClosure() {
 
     //var header = document.querySelector('header'); look for this section in html
     //var section = document.querySelector('section');
@@ -9,7 +9,7 @@ function fillClosure() {
     var la = document.getElementByClassName('la');
     var np = document.getElementByClassName('np');
     var r = document.getElementByClassName('r');
-    
+
     var requestURL = 'directory/temples.json';
 
 
@@ -123,4 +123,4 @@ function fillClosure() {
             }
         }
     }
-}
+// }
