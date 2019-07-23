@@ -5,7 +5,7 @@
 //var section = document.querySelector('section');
 // var aside = document.querySelector('aside'); //look for this section in html
 // var la = document.getElementByClassName('la');
-var sd = document.querySelector('#sd');
+var sd = document.querySelector('aside#sd');
 var la = document.querySelector('#la');
 var np = document.querySelector('#np');
 var r = document.querySelector('#r');
