@@ -42,10 +42,10 @@ function showData(jsonObj) {
 
     // go through each hero and create new elements to display
     for (var i = 0; i < closure.length; i++) {
-        if (closure[i].name == "test") {
+        if (closure[i].name == "la") {
             
 
-            var myArticlesd = document.createElement('article');
+            var myArticle = document.createElement('article');
             var myH2 = document.createElement('h2');
             var templeClosures = document.createElement('p');
 
@@ -56,15 +56,15 @@ console.log(closure[i].closureSchedule);
             templeClosures.textContent = closure[i].closureSchedule;
 console.log(myH2);
 console.log(templeClosures);
-            myArticlesd.appendChild(myH2);
+            myArticle.appendChild(myH2);
 
-            myArticlesd.appendChild(templeClosures);
+            myArticle.appendChild(templeClosures);
 
-console.log(myArticlesd);
-console.log(sd);
+console.log(myArticle);
+console.log(la);
 
-            sd.appendChild(myArticlesd);
-            console.log(sd);
+            la.appendChild(myArticlela);
+            console.log(la);
             //la instead 
         }
         // add if
