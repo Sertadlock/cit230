@@ -5,7 +5,7 @@
 var aside = document.querySelector('aside'); //look for this section in html
 
 
-var requestURL = 'directory/json.json';
+var requestURL = '/CIT230/final-project/directory/json.json';
 //create new request object instance with constructor, keyword "new"
 var request = new XMLHttpRequest();
 //open a new request using open() menthod
@@ -26,7 +26,7 @@ request.onload = function () {
 function showData(jsonObj) {
     //Set members property (part of the object) to a new variable
     console.log(jsonObj);
-    
+
     var closure = jsonObj['closure'];
 
 
