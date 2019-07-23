@@ -10,6 +10,7 @@ var la = document.querySelector('#la');
 var np = document.querySelector('#np');
 var r = document.querySelector('#r');
 
+
 var requestURL = 'directory/temples.json';
 
 
