@@ -1,4 +1,5 @@
-
+window.onunload = fillClosure;
+function fillClosure() {
 
 //var header = document.querySelector('header'); look for this section in html
 //var section = document.querySelector('section');
@@ -56,4 +57,5 @@ function showData(jsonObj) {
         }
 
     }
+}
 }
