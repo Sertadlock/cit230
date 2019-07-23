@@ -5,7 +5,10 @@ function fillClosure() {
 //var section = document.querySelector('section');
 var aside = document.querySelector('aside'); //look for this section in html
 // var la = document.getElementByClassName('la');
-
+var sd = document.getElementByClassName('sd');
+var la = document.getElementByClassName('la');
+var np = document.getElementByClassName('np');
+var r = document.getElementByClassName('r');
 var requestURL = 'directory/temples.json';
 
 
@@ -47,13 +50,14 @@ function showData(jsonObj) {
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
             
-            templeClosures.textContent = closure[i].name.closuresSchedule.toString();
+            templeClosures.textContent = closure[i].name.closuresSchedule;
 
             myArticle.appendChild(myH2);
             
             myArticle.appendChild(templeClosures);
 
-            aside.appendChild(myArticle);
+            
+            la.appendChild(myArticle);
             console.log(aside);
 //la instead 
         }
