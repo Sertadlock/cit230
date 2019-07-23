@@ -1,16 +1,16 @@
 
     {
         "closure": [ 
-        { "city" : "la",
-            "close" : [ “Tuesday, 16 July 2019 - Monday, 29 July 2019”, 
-            “Saturday, 5 October 2019”, 
-            “Wednesday, 27 November 2019 - Thursday, 28 November 2019”, 
-            “Friday, 29 November 2019 (Limited Hours)”, 
-            “Tuesday, 24 December 2019 - Thursday, 26 December 2019”, 
-            “Tuesday, 31 December 2019”, 
-            “Monday, 17 February 2020 - Monday, 2 March 2020”, 
-             “Monday, 6 July 2020 - Monday, 20 July 2020”
-             ]}   //,
+        { "city" : "la"
+            // "close" : [ “Tuesday, 16 July 2019 - Monday, 29 July 2019”, 
+            // “Saturday, 5 October 2019”, 
+            // “Wednesday, 27 November 2019 - Thursday, 28 November 2019”, 
+            // “Friday, 29 November 2019 (Limited Hours)”, 
+            // “Tuesday, 24 December 2019 - Thursday, 26 December 2019”, 
+            // “Tuesday, 31 December 2019”, 
+            // “Monday, 17 February 2020 - Monday, 2 March 2020”, 
+            //  “Monday, 6 July 2020 - Monday, 20 July 2020”
+            //  ]}   //,
              
 //         { "city" : "np" : [{“Monday, 15 July 2019 - Monday, 29 July 2019”}, 
 //             {“Monday, 2 September 2019 (Limited Hours)”}, 
@@ -63,6 +63,7 @@
 //             “Friday, 25 December 2020”, 
 //             “Thursday, 31 December 2020”
 //              ]}
+        }
         ]
     }
  
