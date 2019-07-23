@@ -5,7 +5,7 @@
 var aside = document.querySelector('aside'); //look for this section in html
 
 
-var requestURL = 'https://github.com/Sertadlock/cit230/blob/master/final-project/directory/json.json';
+var requestURL = 'http://github.com/Sertadlock/cit230/blob/master/final-project/directory/json.json';
 
 //create new request object instance with constructor, keyword "new"
 var request = new XMLHttpRequest();
