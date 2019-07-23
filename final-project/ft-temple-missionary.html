@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn and Suites - Home</title>
+    <meta name="description" content="Home page Temple Inn and Suites">
+
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/small.css" type="text/css" rel="stylesheet" />
+    <link href="css/medium.css" type="text/css" rel="stylesheet" />
+    <link href="css/large.css" type="text/css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/tis-logo.jpg" alt="Temple Inn and Suites logo" title="Logo" class="logo_1" />
+
+        <section class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <p>Its like coming home</p>
+        </section>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reception.html">Weddings</a></li>
+                <li class="active"><a href="ft-temple-missionary.html">Missionary</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <h1 class="centerheading">Full Time Temple Missionaies Welcome</h1>
+    <main class="container">
+        
+            
+           
+            <section>
+                <figure> <img src="images/studio-hotel.jpg" alt="One Bedroom Studio" />
+                    <figcaption>One Bedroom stutios to help you Relax and Rest in style</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <figure> <img src="images/1bed-hotel.jpg" alt="Two Bedroom Studio" />
+                    <figcaption>Two Bedroom Suites to share with family and friends</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <figure> <img src="images/2bed-hotel.jpg" alt="Three Bedroom Studio" />
+                    <figcaption>Three Bedroom Suites</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <figure> <img src="images/kitchen-hotel.jpg" alt="Kitchen" />
+                    <figcaption>Full Kitchen</figcaption>
+                </figure>
+            </section>
+
+    
+    </main>
+    
+            <!-- contact us section -->
+           
+            <form>
+                    <h2 class="headings">Questions?</h2>
+                <label> Name: (Required)</label><br>
+                <input type="text" name="fullname" pattern="[A-Za-z ]" required>
+
+                <label>Email: (Required)</label> <br>
+                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+                <label>Phone number: (Required)</label><br>
+                <input type="tel" name="phonenumber" required>
+
+                <label>Additional Information or Comments</label><br>
+
+                <textarea rows=5 cols=40>Comments</textarea> <br>
+
+                <input type="submit" formaction="thankyou.html" />
+
+            </form>
+
+            <section>
+                <div class="contact">
+                    <h3>Contact Information</h3>
+                    <div>
+                        <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                        <p>909-555-5555</p>
+                        <p>Email: <a href="mailto:info@eefmarketing.com">Email Us</a></p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+    <footer>
+
+
+
+        <p>Weather information provided by <a href="https://openweathermap.org/">Openweathermap.org</a></p>
+        <p class="copyright">All content &copy; Temple Inn and Suites
+            <p id="date"></p>
+
+
+    </footer>
+
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/json.js"></script>
+</body>
+
+</html>
