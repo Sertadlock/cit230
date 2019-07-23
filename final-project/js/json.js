@@ -9,6 +9,7 @@ var aside = document.querySelector('aside'); //look for this section in html
 var requestURL = 'js/json.json';
 
 
+
 //create new request object instance with constructor, keyword "new"
 
 var request = new XMLHttpRequest();
