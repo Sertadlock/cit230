@@ -6,7 +6,6 @@
 // var aside = document.querySelector('aside'); //look for this section in html
 // var la = document.getElementByClassName('la');
 // var sd = document.querySelector('#sd');
-
 var la = document.querySelector('#la');
 var np = document.querySelector('#np');
 var r = document.querySelector('#r');
