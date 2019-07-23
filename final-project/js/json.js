@@ -1,4 +1,4 @@
-window.onunload = fillClosure;
+window.onload = fillClosure;
 function fillClosure() {
 
 //var header = document.querySelector('header'); look for this section in html
