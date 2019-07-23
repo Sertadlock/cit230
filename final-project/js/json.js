@@ -5,7 +5,7 @@
 //var section = document.querySelector('section');
 // var aside = document.querySelector('aside'); //look for this section in html
 // var la = document.getElementByClassName('la');
-// var sd = document.querySelector('#sd');
+var sd = document.querySelector('#sd');
 var la = document.querySelector('#la');
 var np = document.querySelector('#np');
 var r = document.querySelector('#r');
@@ -42,9 +42,9 @@ function showData(jsonObj) {
     // go through each hero and create new elements to display
     for (var i = 0; i < closure.length; i++) {
         if (closure[i].name == "test") {
-            var sd = document.querySelector('#sd');
+            
 
-            var myArticle = document.createElement('article');
+            var myArticlesd = document.createElement('article');
             var myH2 = document.createElement('h2');
             var templeClosures = document.createElement('p');
 
@@ -55,12 +55,13 @@ console.log(closure[i].closureSchedule);
             templeClosures.textContent = closure[i].closureSchedule;
 console.log(myH2);
 console.log(templeClosures);
-            myArticle.appendChild(myH2);
+            myArticlesd.appendChild(myH2);
 
             myArticle.appendChild(templeClosures);
 
-console.log(myArticle);
-            sd.appendChild(myArticle);
+console.log(myArticlesd);
+console.log(sd);
+            sd.appendChild(myArticlesd);
             console.log(sd);
             //la instead 
         }
