@@ -51,7 +51,7 @@ function showData(jsonObj) {
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
 
-            templeClosures.textContent = closure[i].name.closureSchedule;
+            templeClosures.textContent = closure[i].name.closureSchedule[0];
 
             myArticle.appendChild(myH2);
 
