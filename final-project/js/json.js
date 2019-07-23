@@ -10,6 +10,7 @@ var requestURL = 'directory/json.json';
 
 
 //create new request object instance with constructor, keyword "new"
+
 var request = new XMLHttpRequest();
 //open a new request using open() menthod
 //takes two parameters, get is a method to make request, 
