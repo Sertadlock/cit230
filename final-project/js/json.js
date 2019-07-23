@@ -64,6 +64,7 @@ console.log(myArticle);
 console.log(la);
 
             la.appendChild(myArticle);
+            
             console.log(la);
             //la instead 
         }
