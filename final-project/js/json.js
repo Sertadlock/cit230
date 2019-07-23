@@ -57,7 +57,7 @@ console.log(myH2);
 console.log(templeClosures);
             myArticlesd.appendChild(myH2);
 
-            myArticle.appendChild(templeClosures);
+            myArticlesd.appendChild(templeClosures);
 
 console.log(myArticlesd);
 console.log(sd);
