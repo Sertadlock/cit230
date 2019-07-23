@@ -5,10 +5,10 @@
 //var section = document.querySelector('section');
 // var aside = document.querySelector('aside'); //look for this section in html
 // var la = document.getElementByClassName('la');
-// var sd = document.getElementByClassName('sd');
+var sd = document.querySelector('#sd');
 var la = document.querySelector('#la');
-// var np = document.getElementByClassName('np');
-// var r = document.getElementByClassName('r');
+var np = document.querySelector('#np');
+var r = document.querySelector('#r');
 
 var requestURL = 'directory/temples.json';
 
@@ -51,7 +51,7 @@ function showData(jsonObj) {
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
 
-            templeClosures.textContent = closure[i].name.closuresSchedule;
+            templeClosures.textContent = closure[i].name.closureSchedule;
 
             myArticle.appendChild(myH2);
 
@@ -73,7 +73,7 @@ function showData(jsonObj) {
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
 
-            templeClosures.textContent = closure[i].name.closuresSchedule;
+            templeClosures.textContent = closure[i].name.closureSchedule;
 
             myArticle.appendChild(myH2);
 
@@ -92,7 +92,7 @@ function showData(jsonObj) {
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
 
-            templeClosures.textContent = closure[i].name.closuresSchedule;
+            templeClosures.textContent = closure[i].name.closureSchedule;
 
             myArticle.appendChild(myH2);
 
@@ -112,7 +112,7 @@ function showData(jsonObj) {
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
 
-            templeClosures.textContent = closure[i].name.closuresSchedule;
+            templeClosures.textContent = closure[i].name.closureSchedule;
 
             myArticle.appendChild(myH2);
 
