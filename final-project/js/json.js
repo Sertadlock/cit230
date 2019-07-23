@@ -59,7 +59,7 @@ function showData(jsonObj) {
 
 
             la.appendChild(myArticle);
-            console.log(aside);
+            console.log(la);
             //la instead 
         }
         // add if
