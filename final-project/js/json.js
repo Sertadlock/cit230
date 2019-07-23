@@ -6,7 +6,7 @@ function fillClosure() {
 var aside = document.querySelector('aside'); //look for this section in html
 
 
-var requestURL = 'js/json.json';
+var requestURL = 'directory/temples.json';
 
 
 
