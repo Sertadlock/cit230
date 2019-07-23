@@ -4,7 +4,7 @@ function fillClosure() {
 //var header = document.querySelector('header'); look for this section in html
 //var section = document.querySelector('section');
 var aside = document.querySelector('aside'); //look for this section in html
-
+// var la = document.getElementByClassName('la');
 
 var requestURL = 'directory/temples.json';
 
@@ -54,9 +54,10 @@ function showData(jsonObj) {
             myArticle.appendChild(templeClosures);
 
             aside.appendChild(myArticle);
-
+            console.log(aside);
+//la instead 
         }
-
+// add if
     }
 }
 }
