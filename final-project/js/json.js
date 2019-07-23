@@ -41,28 +41,28 @@ function showData(jsonObj) {
 
     // go through each hero and create new elements to display
     for (var i = 0; i < closure.length; i++) {
-//         if (closure[i].name == "la") {
+        if (closure[i].name == "sd") {
 
 
-//             var myArticle = document.createElement('article');
-//             var myH2 = document.createElement('h2');
-//             var templeClosures = document.createElement('p');
+            var myArticle = document.createElement('article');
+            var myH2 = document.createElement('h2');
+            var templeClosures = document.createElement('p');
 
-//             //sets variable myH2 to heroes city for each loop. (textContext)
-//             myH2.textContent = "Temple Closure Schedule";
-//             //Fills paragraph variables above with properties for the specified hero
-// console.log(closure[i].closureSchedule);
-//             templeClosures.textContent = closure[i].closureSchedule;
+            //sets variable myH2 to heroes city for each loop. (textContext)
+            myH2.textContent = "Temple Closure Schedule";
+            //Fills paragraph variables above with properties for the specified hero
+console.log(closure[i].closureSchedule);
+            templeClosures.textContent = closure[i].closureSchedule;
 
-//             myArticle.appendChild(myH2);
+            myArticle.appendChild(myH2);
 
-//             myArticle.appendChild(templeClosures);
+            myArticle.appendChild(templeClosures);
 
 
-//             la.appendChild(myArticle);
-//             console.log(la);
-//             //la instead 
-//         }
+            sd.appendChild(myArticle);
+            console.log(sd);
+            //la instead 
+        }
         // add if
         if (closure[i].name == "sd") {
 console.log("inside here");
