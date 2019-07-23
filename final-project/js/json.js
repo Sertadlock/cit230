@@ -50,8 +50,8 @@ function showData(jsonObj) {
             //sets variable myH2 to heroes city for each loop. (textContext)
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
-
-            templeClosures.textContent = closure[i].name.closureSchedule[0];
+console.log(closure[i].name.closureSchedule);
+            templeClosures.textContent = closure[i].name.closureSchedule;
 
             myArticle.appendChild(myH2);
 
