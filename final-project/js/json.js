@@ -32,7 +32,7 @@ function showData(jsonObj) {
     //Set members property (part of the object) to a new variable
     console.log(jsonObj);
 
-    var closure = jsonObj['closure'];
+    var closure = jsonObj['temples'];
 
 
     // go through each hero and create new elements to display
