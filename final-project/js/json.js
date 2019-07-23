@@ -5,7 +5,7 @@
 var aside = document.querySelector('aside'); //look for this section in html
 
 
-var requestURL = 'http://github.com/Sertadlock/cit230/blob/master/final-project/directory/json.json';
+var requestURL = 'directory/json.json';
 
 
 
