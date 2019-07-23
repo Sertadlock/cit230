@@ -37,17 +37,17 @@ function showData(jsonObj) {
 
     // go through each hero and create new elements to display
     for (var i = 0; i < closure.length; i++) {
-        if (closure[i].city == "la") {
+        if (closure[i].name == "la") {
          
             var myArticle = document.createElement('article');
             var myH2 = document.createElement('h2');
-            var templeClosures = document.createElement('li');
+            var templeClosures = document.createElement('p');
 
             //sets variable myH2 to heroes city for each loop. (textContext)
             myH2.textContent = "Temple Closure Schedule";
             //Fills paragraph variables above with properties for the specified hero
             
-            templeClosures.textContent = closure[i].events.toString();
+            templeClosures.textContent = closure.name[i].closuresSchedule.toString();
 
             myArticle.appendChild(myH2);
             
