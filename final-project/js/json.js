@@ -53,12 +53,13 @@ function showData(jsonObj) {
             //Fills paragraph variables above with properties for the specified hero
 console.log(closure[i].closureSchedule);
             templeClosures.textContent = closure[i].closureSchedule;
-
+console.log(myH2);
+console.log(templeClosures);
             myArticle.appendChild(myH2);
 
             myArticle.appendChild(templeClosures);
 
-
+console.log(myArticle);
             sd.appendChild(myArticle);
             console.log(sd);
             //la instead 
