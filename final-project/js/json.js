@@ -80,7 +80,7 @@ function showData(jsonObj) {
 
             myArticle1.appendChild(templeClosures);
 
-
+            console.log(sd);
             sd.appendChild(myArticle1);
         }
 
