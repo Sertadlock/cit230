@@ -42,7 +42,7 @@ function showData(jsonObj) {
     // go through each hero and create new elements to display
     for (var i = 0; i < closure.length; i++) {
 //         if (closure[i].name == "la") {
-    
+
 
 //             var myArticle = document.createElement('article');
 //             var myH2 = document.createElement('h2');
@@ -100,7 +100,7 @@ function showData(jsonObj) {
 
             myArticle2.appendChild(templeClosures);
 
-
+console.log(np);
             np.appendChild(myArticle2);
         }
 
