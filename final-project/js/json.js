@@ -41,7 +41,7 @@ function showData(jsonObj) {
 
     // go through each hero and create new elements to display
     for (var i = 0; i < closure.length; i++) {
-        if (closure[i].name == "sd") {
+        if (closure[i].name == "test") {
 
 
             var myArticle = document.createElement('article');
