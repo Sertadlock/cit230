@@ -18,12 +18,14 @@ request.onload = function () {
     var closureInfo = request.response;
 
     showData(closureInfo);
+    
 
 }
 
 //This create and displays Hero cards
 function showData(jsonObj) {
     //Set members property (part of the object) to a new variable
+    console.log(jsonObj);
     var closure = jsonObj['closure'];
 
 
