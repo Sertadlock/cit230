@@ -5,7 +5,7 @@
 var aside = document.querySelector('aside'); //look for this section in html
 
 
-var requestURL = 'directory/json.json';
+var requestURL = 'js/json.json';
 
 //create new request object instance with constructor, keyword "new"
 
