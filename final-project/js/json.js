@@ -66,6 +66,7 @@ function showData(jsonObj) {
         // add if
         if (closure[i].name == "sd") {
 console.log("inside here");
+
             var myArticle1 = document.createElement('article');
             var myH2 = document.createElement('h2');
             var templeClosures = document.createElement('p');
