@@ -61,6 +61,7 @@ console.log(templeClosures);
 
 console.log(myArticlesd);
 console.log(sd);
+
             sd.appendChild(myArticlesd);
             console.log(sd);
             //la instead 
