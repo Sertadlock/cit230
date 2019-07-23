@@ -65,7 +65,7 @@ console.log(closure[i].closureSchedule);
         // add if
         if (closure[i].name == "sd") {
 
-            var myArticle = document.createElement('article');
+            var myArticle1 = document.createElement('article');
             var myH2 = document.createElement('h2');
             var templeClosures = document.createElement('p');
 
@@ -75,16 +75,16 @@ console.log(closure[i].closureSchedule);
 
             templeClosures.textContent = closure[i].closureSchedule;
 
-            myArticle.appendChild(myH2);
+            myArticle1.appendChild(myH2);
 
-            myArticle.appendChild(templeClosures);
+            myArticle1.appendChild(templeClosures);
 
 
-            sd.appendChild(myArticle);
+            sd.appendChild(myArticle1);
         }
         if (closure[i].name == "np") {
 
-            var myArticle = document.createElement('article');
+            var myArticle2 = document.createElement('article');
             var myH2 = document.createElement('h2');
             var templeClosures = document.createElement('p');
 
@@ -94,17 +94,17 @@ console.log(closure[i].closureSchedule);
 
             templeClosures.textContent = closure[i].closureSchedule;
 
-            myArticle.appendChild(myH2);
+            myArticle2.appendChild(myH2);
 
-            myArticle.appendChild(templeClosures);
+            myArticle2.appendChild(templeClosures);
 
 
-            np.appendChild(myArticle);
+            np.appendChild(myArticle2);
         }
 
         if (closure[i].name == "r") {
 
-            var myArticle = document.createElement('article');
+            var myArticle3 = document.createElement('article');
             var myH2 = document.createElement('h2');
             var templeClosures = document.createElement('p');
 
@@ -114,12 +114,12 @@ console.log(closure[i].closureSchedule);
 
             templeClosures.textContent = closure[i].closureSchedule;
 
-            myArticle.appendChild(myH2);
+            myArticle3.appendChild(myH2);
 
-            myArticle.appendChild(templeClosures);
+            myArticle3.appendChild(templeClosures);
 
 
-            r.appendChild(myArticle);
+            r.appendChild(myArticle3);
         }
     }
 }
