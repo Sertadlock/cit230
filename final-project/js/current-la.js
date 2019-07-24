@@ -26,13 +26,16 @@ requestla.onload = function () {
     // create new elements to display
     
 
-
+        var myh2 = document.createElement('h2');
         var currently = document.createElement('p'); //
         var temp = document.createElement('p');
 
+        myh2.textContent = "Current Weather"
         currently.textContent = list.weather[0].main;
+
         temp.textContent = list.main.temp;
 
+        la.appendChild(myh2);
         la.appendChild(currently);
         la.appendChild(temp);
         console.log(la);

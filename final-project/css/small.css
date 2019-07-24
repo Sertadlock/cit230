@@ -199,14 +199,14 @@ nav ul.responsive li {
   }
   /*end temples page css*/
 
-
-  aside {
+ /*aside? */
+  .wrap {
   /* text-align: center; */
  display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
   
-    
+
   }
 
   aside img {
