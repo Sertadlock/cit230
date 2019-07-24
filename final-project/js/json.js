@@ -122,11 +122,12 @@ console.log(np);
 
             r.appendChild(myH2);
 
-           r.appendChild(templeClosures);
+            r.appendChild(templeClosures);
 
 
             // r.appendChild(myArticle3);
         }
     }
+}
 }
 // }
