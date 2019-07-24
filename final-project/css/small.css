@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=MerriweatherPT+SerifSource+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro&display=swap');
 
 /* hamburger button*/
 /* * {
@@ -128,12 +128,12 @@ nav ul.responsive li {
     text-align: center;
   }
   article{
-    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
   
   }
   
   footer{
-    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
      margin: auto;
   width: 90%;
   border: 3px solid #0a4c80;
@@ -312,7 +312,7 @@ div .dot1 {
 }
 
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+body {font-family: 'Roboto', sans-serif;}
 .slides {display: none;}
 img {vertical-align: middle;}
 
