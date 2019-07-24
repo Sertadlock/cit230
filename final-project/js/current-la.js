@@ -1,6 +1,6 @@
 
 // var sd = document.querySelector('#tempsd');
-var la = document.querySelector('#templa');
+var templa = document.querySelector('#templa');
 // var np = document.querySelector('#tempnp');
 // var r = document.querySelector('#tempr');
 
@@ -35,10 +35,10 @@ requestla.onload = function () {
 
         temp.textContent = list.main.temp;
 
-        la.appendChild(myh2);
-        la.appendChild(currently);
-        la.appendChild(temp);
-        console.log(la);
+        templa.appendChild(myh2);
+        templa.appendChild(currently);
+        templa.appendChild(temp);
+        console.log(templa);
     }
 
 
