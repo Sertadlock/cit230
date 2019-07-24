@@ -24,7 +24,7 @@ requestla.onload = function () {
 
 
     // create new elements to display
-    for (var i = 0; i < list.length; i++) {
+    
 
 
         var currently = document.createElement('p'); //
@@ -35,10 +35,11 @@ requestla.onload = function () {
 
         la.appendChild(currently);
         la.appendChild(temp);
+        console.log(la);
     }
 
 
-}
+
 
 
 
