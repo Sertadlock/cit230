@@ -81,6 +81,7 @@ console.log("inside here");
             templeClosures.textContent = closure[i].closureSchedule;
 
             sd.appendChild(myH2);
+            
 
             sd.appendChild(templeClosures);
 
