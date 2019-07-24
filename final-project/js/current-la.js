@@ -25,21 +25,17 @@ requestla.onload = function () {
 
     // create new elements to display
     for (var i = 0; i < list.length; i++) {
-       
-       
+
+
         var currently = document.createElement('p'); //
         var temp = document.createElement('p');
-       
+
         currently.textContent = list.weather[0].main;
         temp.textContent = list.main.temp;
 
-        la.appendChild(currenly);
+        la.appendChild(currently);
         la.appendChild(temp);
-        
-
     }
-    
-
 
 
 }
