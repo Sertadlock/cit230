@@ -209,6 +209,21 @@ nav ul.responsive li {
 
   }
 
+  aside {
+    /* text-align: center; */
+   display: flex;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+  }
+
+  .nowrap {
+    /* text-align: center; */
+   display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      text-transform: capitalize;
+      /* justify-content: center; */
+  }
   aside img {
     width: 90%;
     min-width: 100px;
