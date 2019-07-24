@@ -139,6 +139,7 @@ nav ul.responsive li {
   border: 3px solid #0a4c80;
   padding: 10px;
   text-align: center;
+  margin-top: 10px;
   }
 
   .hero{
@@ -250,12 +251,14 @@ input {
   color: #fcf0a6;
   padding: 5px;
   background-color: #0a4c80;
+  margin-bottom: 5px;
 }
 
 textarea {
   color: #fcf0a6;
   padding: 5px;
   background-color: #0a4c80;
+  margin-bottom: 10px;
 }
 
 
@@ -266,7 +269,8 @@ textarea {
   padding: 10px;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
 
 }
 
@@ -308,7 +312,8 @@ div .dot1 {
 } 
 
 .button {
-  align-content: center;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 * {box-sizing: border-box;}

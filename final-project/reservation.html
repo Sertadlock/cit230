@@ -46,31 +46,31 @@
     <main>
 
 
-            <form action="thankyou.html">
+            <form>
 
                     <h2>Make your reservation Today!</h2>
         
-                    <label> Name: (Required)</label><br>
+                    <label> Name: (Required)</label>
                     <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required>
                     
         
-                    <label>Email:</label> <br>
+                    <label>Email:</label>
                     <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         
-                    <label>Phone number: (Required)</label><br>
+                    <label>Phone number: (Required)</label>
                     <input type="tel" name="phonenumber" required>
         
-                    <label>Zip Code: (Required)</label><br>
+                    <label>Zip Code: (Required)</label>
                     <input type="number" name="zipcode" required>
         
                             
-                    <label>Start Date</label><br>
+                    <label>Start Date</label>
                     <input type="date" name="date">
 
-                    <label>Departure Date</label><br>
+                    <label>Departure Date</label>
                     <input type="date" name="date">
         
-                    <label>Room Type</label><br>
+                    <label>Room Type</label>
                     <input list="room-type" id="room-type-list" name="room-type" />
                     <datalist id="room-type">
                         <option value="1 Bedroom studio">
@@ -79,7 +79,7 @@
                         </datalist>
                     
         
-                    <label>Temple Location</label><br>
+                    <label>Temple Location</label>
                     <input list="select" id="region" name="options" />
                     <datalist id="select">
                         <option value="Select Region">
@@ -88,14 +88,14 @@
                         <option value="Redlands">
                         <option value="New Port Beach">
                     </datalist>
-                    <br>
                     
-                    <label>Special Accommodations or Comments</label><br>
+                    
+                    <label>Special Accommodations or Comments</label>
                     <textarea rows="5" cols="37"> </textarea>
-                    <br>
+                    
         
         
-                    <button type="submit">Reserve Now!</button>
+                    <input type="submit" formaction="index.html" />
                 </form>
         
         <section>
