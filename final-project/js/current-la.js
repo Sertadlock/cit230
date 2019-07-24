@@ -33,7 +33,7 @@ requestla.onload = function () {
         myh2.textContent = "Current Weather"
         currently.textContent = list.weather[0].main;
 
-        temp.textContent = list.main.temp;
+        temp.textContent = list.main.temp + "F\xB0";
 
         templa.appendChild(myh2);
         templa.appendChild(currently);
