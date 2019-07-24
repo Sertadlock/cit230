@@ -122,6 +122,7 @@ console.log(np);
             templeClosures.textContent = closure[i].closureSchedule;
 
             r.appendChild(myH2);
+            
 
             r.appendChild(templeClosures);
 
