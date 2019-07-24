@@ -202,10 +202,10 @@ nav ul.responsive li {
   
 
   aside {
-  text-align: center;
+  /* text-align: center; */
  display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
   
   }
 
