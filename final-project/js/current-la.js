@@ -1,6 +1,7 @@
 
 // var sd = document.querySelector('#tempsd');
 var la = document.querySelector('#templa');
+
 // var np = document.querySelector('#tempnp');
 // var r = document.querySelector('#tempr');
 
