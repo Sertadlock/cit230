@@ -81,13 +81,13 @@ console.log("inside here");
             templeClosures.textContent = closure[i].closureSchedule;
 
             sd.appendChild(myH2);
-            
+
 
             sd.appendChild(templeClosures);
 
             console.log(sd);
         //     sd.appendChild(myArticle1);
-        // }
+        }
 
         if (closure[i].name == "np") {
 
@@ -130,5 +130,5 @@ console.log(np);
         }
     }
 }
-}
+
 // }
