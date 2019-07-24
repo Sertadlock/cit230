@@ -45,7 +45,7 @@ function showData(jsonObj) {
         if (closure[i].name == "la") {
             
 
-            var myArticle = document.createElement('article');
+            // var myArticle = document.createElement('article');
             var myH2 = document.createElement('h2');
             var templeClosures = document.createElement('p');
 
@@ -56,15 +56,14 @@ console.log(closure[i].closureSchedule);
             templeClosures.textContent = closure[i].closureSchedule;
 console.log(myH2);
 console.log(templeClosures);
-            myArticle.appendChild(myH2);
+            la.appendChild(myH2);
 
-            myArticle.appendChild(templeClosures);
+            la.appendChild(templeClosures);
 
-console.log(myArticle);
-console.log(la);
 
-            la.appendChild(myArticle);
-            
+
+            // la.appendChild(myArticle);
+
             console.log(la);
             //la instead 
         }
