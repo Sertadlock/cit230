@@ -12,11 +12,12 @@ var request = new XMLHttpRequest();
 //takes two parameters, get is a method to make request, 
 //the second is the URL, which is stored in a variable above 
 request.open('GET', requestURL);
+request.responseType = 'json';
 request.send();
 request.onload = function () {
 
 
-    var weather = JSON.parse(request.responseText);
+    var weather = request.response;
     console.log(weather);
     var list = weather; //work?
     console.log(list);
