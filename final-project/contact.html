@@ -66,18 +66,18 @@
 
         <form>
             <h2>We'd love to hear from you</h2>
-            <label> Name: (Required)</label>
-            <input type="text" name="fullname" pattern="[a-zA-Z ]+" required>
+            <label for="name"> Name: (Required)</label>
+            <input type="text" id="name" name="fullname" pattern="[a-zA-Z ]+" required>
 
-            <label>Email: (Required)</label>
-            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <label for="email">Email: (Required)</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 
-            <label>Phone number: (Required)</label>
-            <input type="tel" name="phonenumber" required>
+            <label for="phone">Phone number: (Required)</label>
+            <input type="tel" id="phone" name="phonenumber" required>
 
-            <label>Additional Information or Comments</label>
+            <label for="comments">Additional Information or Comments</label>
 
-            <textarea rows=5 cols=40 placeholder="Comments"></textarea>
+            <textarea rows=5 cols=40 id="comments" placeholder="Comments"></textarea>
 
             <input type="submit" formaction="index.html" />
 
