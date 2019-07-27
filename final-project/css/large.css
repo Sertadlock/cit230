@@ -19,7 +19,7 @@ nav button{
   
   /* check .active has a class in main page*/
   .active {
-    background-color: rgb(102, 83, 206);
+    background-color: #5C5C5C;
     color: white;
   }
         
