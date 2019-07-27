@@ -79,12 +79,12 @@ nav ul.responsive li {
   
   
   .active {
-    background-color: rgb(102, 83, 206);
+    background-color: #5C5C5C;
     color: #f8d804;
   }
 
   nav a:hover {
-    background-color: #ddd;
+    background-color: rgb(166, 171, 240);
     color: black;
   }
            
@@ -162,7 +162,7 @@ nav ul.responsive li {
   }
   
   .container > section {
-    background: #ddd;
+    background: #292c49fd;
     padding: .5rem;
     border: 1px solid #bbb;
     margin-right: 2px;
