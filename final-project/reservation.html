@@ -13,7 +13,7 @@
     <link href="css/medium.css" type="text/css" rel="stylesheet" />
     <link href="css/large.css" type="text/css" rel="stylesheet" />
 
-   
+
 
 </head>
 
@@ -22,11 +22,11 @@
     <header>
         <section class="headings">
             <img src="images/images/templehotellogo-1.png" alt="Temple Inn and Suites logo" class="logo1" />
-    
-           
-                <h1>Temple Inn & Suites</h1>
-               <!-- <h2> Its like coming home</h2> -->
-            </section>
+
+
+            <h1>Temple Inn & Suites</h1>
+            <!-- <h2> Its like coming home</h2> -->
+        </section>
 
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
@@ -46,61 +46,61 @@
     <main>
 
 
-            <form>
+        <form>
 
-                    <h2>Make your reservation Today!</h2>
-        
-                    <label for="name"> Name: (Required)</label>
-                    <input type="text" id="name" name="fullname" pattern="[A-Za-z ]{5,}" required>
-                    
-        
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        
-                    <label for="phone">Phone number: (Required)</label>
-                    <input type="tel" id="phone" name="phonenumber" required>
-        
-                    <label for="zip-code">Zip Code: (Required)</label>
-                    <input type="number" id="zip-code" name="zipcode" required>
-        
-                            
-                    <label for="start-date">Start Date</label>
-                    <input type="date" id="start-date" name="date">
+            <h2>Make your reservation Today!</h2>
 
-                    <label for="departure-date">Departure Date</label>
-                    <input type="date" id="departure-date" name="date">
-        
-                    <label for="room-type-list">Room Type</label>
-                    <input list="room-type" id="room-type-list" name="room-type" />
-                    <datalist id="room-type">
-                        <option value="1 Bedroom studio">
-                        <option value="2 Bedroom Suite">
-                        <option value="3 Bedroom Suite">
-                        </datalist>
-                    
-        
-                    <label for="region">Temple Location</label>
-                    <input list="select" id="region" name="options" />
-                    <datalist id="select">
-                        <option value="Select Region">
-                        <option value="Los Angeles">
-                        <option value="San Diego">
-                        <option value="Redlands">
-                        <option value="New Port Beach">
-                    </datalist>
-                    
-                    
-                    <label for="comments">Special Accommodations or Comments</label>
-                    <textarea rows="5" cols="37" id="comments" placeholder="Comments"></textarea>
-                    
-        
-        
-                    <input type="submit" formaction="thankyou.html" />
-                </form>
-        
+            <label for="name"> Name: (Required)</label>
+            <input type="text" id="name" name="fullname" pattern="[A-Za-z ]{5,}" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+            <label for="phone">Phone number: (Required)</label>
+            <input type="tel" id="phone" name="phonenumber" required>
+
+            <label for="zip-code">Zip Code: (Required)</label>
+            <input type="number" id="zip-code" name="zipcode" required>
+
+
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" name="date">
+
+            <label for="departure-date">Departure Date</label>
+            <input type="date" id="departure-date" name="date">
+
+            <label for="room-type-list">Room Type</label>
+            <input list="room-type" id="room-type-list" name="room-type" />
+            <datalist id="room-type">
+                <option value="1 Bedroom studio">
+                <option value="2 Bedroom Suite">
+                <option value="3 Bedroom Suite">
+            </datalist>
+
+
+            <label for="region">Temple Location</label>
+            <input list="select" id="region" name="options" />
+            <datalist id="select">
+                <option value="Select Region">
+                <option value="Los Angeles">
+                <option value="San Diego">
+                <option value="Redlands">
+                <option value="New Port Beach">
+            </datalist>
+
+
+            <label for="comments">Special Accommodations or Comments</label>
+            <textarea rows="5" cols="37" id="comments" placeholder="Comments"></textarea>
+
+
+
+            <input type="submit" formaction="thankyou.html" />
+        </form>
+
         <section>
             <div class="contact">
-                    <!-- <form>
+                <!-- <form>
 
                             <h2>Make your reservation Today!</h2>
                 
@@ -152,9 +152,9 @@
                             <input type="submit" formaction="thankyou.html" />
                         </form> -->
 
-               
+
                 <div>
-                        <h3>Contact Information</h3>
+                    <h3>Contact Information</h3>
                     <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
                     <p>909-555-5555</p>
                     <p>Email: <a href="mailto:info@eefmarketing.com">Email Us</a></p>
@@ -165,7 +165,7 @@
                     <img src="images/np-temple.jpg" alt="Newport Beach Temple" title="temple" class="temple" />
                     <img src="images/r-temple.jpg" alt="Redlands Temple" title="Temple" class="temple" /> -->
                 </div>
-              
+
             </div>
 
         </section>
@@ -174,11 +174,12 @@
 
     <footer>
 
-       
+        <ul>
             <li><a href="resources.html">Resource Page</a></li>
+        </ul>
         <p>Weather information provided by <a href="https://openweathermap.org/">Openweathermap.org</a></p>
         <p class="copyright">All content &copy; Temple Inn and Suites
-        <p id="date"></p>
+            <p id="date"></p>
 
 
     </footer>
