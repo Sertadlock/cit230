@@ -20,7 +20,6 @@
 <body>
 
     <header>
-
         <section class="headings">
             <img src="images/images/templehotellogo-1.png" alt="Temple Inn and Suites logo" class="logo1" />
 
@@ -32,10 +31,10 @@
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="temple.html">Temples</a></li>
-                <li class="active"><a href="services.html">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="reception.html">Weddings</a></li>
                 <li><a href="ft-temple-missionary.html">Missionary</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -46,36 +45,53 @@
 
     <main>
 
-        <h1 class="services1">Services</h1>
-        <ul class="services">
+        <form action="reservation.html">
 
-            <li>Specialized Services
-                <ul>
-                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have
-                        traveled far and need to change to and from church clothes</li>
-                    <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
-                    <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
-                    <li>A wedding reception hall that can be easily customized with a simple catering menu and
-                        kitchen access for food preparation and serving</li>
-                    <li>A family search center that supports family search and ordinace work</li>
-                </ul>
-            </li>
-            <li>Free Amenities
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Exercising/workout room</li>
-                    <li>Indoor pool</li>
-                    <li>WiFi high-speed internet access and smart TVs</li>
-                    <li>Parking</li>
-                    <li>Temple Shuttle</li>
-                    <li>Family history consultation and family ordinance card service</li>
-                </ul>
-            </li>
-        </ul>
+            <div class="slideshow-container">
+                <h1>Thank you for submitting your Request</h1>
+                <p>Someone will contact you shortly</p>
+                <p>To submit another reservation click "Book Today" Below</p>
+                <P>Or Browse our site for temple information for your upcoming trip</P>
+                <div class="slides fade">
 
-        <button class="button" onclick="location.href='reception.html'">Wedding Reception</button><br>
+                    <img src="images/la-temple.jpg" alt=" Los Angeles Temple" style="width:100%">
+                    <div class="text">Los Angeles, Ca </div>
+                </div>
 
-        <button class="button" onclick="location.href='reception.html'">Full-Time Temple Missionary</button>
+                <div class="slides fade">
+
+                    <img src="images/sd-temple.jpg" alt="San Diego Temple" style="width:100%">
+                    <div class="text">San Diego, Ca</div>
+                </div>
+
+                <div class="slides fade">
+
+                    <img src="images/r-temple.jpg" alt="Redlands Temple" style="width:100%">
+                    <div class="text">Rendlands, Ca</div>
+                </div>
+
+                <div class="slides fade">
+
+                    <img src="images/np-temple.jpg" alt="Newport Beach Temple" style="width:100%">
+                    <div class="text">Newport Beach, Ca</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+
+
+
+            <button class="button" onclick="submit">Book Today!</button>
+        </form>
+
 
 
         <section>
@@ -108,6 +124,7 @@
 
     <script src="js/hamburger.js"></script>
     <script src="js/json.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

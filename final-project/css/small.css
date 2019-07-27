@@ -95,26 +95,31 @@ nav ul.responsive li {
   
   
   .header{
-      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       font-family: 'Source Sans Pro', sans-serif;
+     
+      
+
   }
   
   header img, .headings {
-      display: inline-block;
-      vertical-align: middle;
-     
-      margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+      margin: 5px;
      
   }
   
   img {
-    min-width: 500px;
+    min-width: 100px;
   }
 
-  .logo_1 {
-    width: 60px;
-
-  }
+ 
   
   body{
       font-family: 'Source Sans Pro', sans-serif;
@@ -124,9 +129,9 @@ nav ul.responsive li {
   }
   
   
-  .centerheading {
+  /* .centerheading {
     text-align: center;
-  }
+  } */
   article{
     font-family: 'Open Sans', sans-serif;
   
@@ -237,9 +242,20 @@ form {
   margin: 30px;
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
-  max-width: 500px; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* margin: 1rem auto; */
+  max-width: 1090px;
+  width: 90%; 
+   margin: auto;
+  width: 90%;
+  border: 3px solid #0a4c80;
+  padding: 10px;
+  margin-top: 10px;
+
 }
+
+
     
 label {
   color: black;
@@ -252,6 +268,7 @@ input {
   padding: 5px;
   background-color: #0a4c80;
   margin-bottom: 5px;
+  max-width: 500px;
 }
 
 textarea {
@@ -259,6 +276,7 @@ textarea {
   padding: 5px;
   background-color: #0a4c80;
   margin-bottom: 10px;
+  max-width: 500px;
 }
 
 
@@ -271,6 +289,42 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 10px;
+
+}
+
+iframe {
+  Width: 90%;
+  max-width: 400px;
+  height: 300px;
+  border: 3px; 
+  
+}
+
+.services {
+  margin: auto;
+  width: 90%;
+  border: 3px solid #0a4c80;
+  padding: 10px;
+  /* text-align: center; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: inside circle;
+
+}
+
+.services1 {
+  margin: auto;
+  width: 90%;
+  /* border: 3px solid #0a4c80; */
+  padding: 10px;
+  /* text-align: center; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: inside circle;
 
 }
 
@@ -289,6 +343,7 @@ textarea {
   height: 75px;
   -webkit-transition: width 2s; 
   transition: width 2s;
+  margin-top: 10px;
 }
 
 .button:hover {
@@ -302,6 +357,7 @@ textarea {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 
 
 
@@ -377,5 +433,8 @@ text-align: center;
   .text {font-size: 11px}
 }
 
+.logo1 {
+  width:50px;
 
+}
 

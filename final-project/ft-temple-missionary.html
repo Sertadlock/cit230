@@ -20,12 +20,12 @@
 <body>
 
     <header>
-
-        <img src="images/tis-logo.jpg" alt="Temple Inn and Suites logo" title="Logo" class="logo_1" />
-
         <section class="headings">
+            <img src="images/images/templehotellogo-1.png" alt="Temple Inn and Suites logo" class="logo1" />
+
+
             <h1>Temple Inn & Suites</h1>
-            <p>Its like coming home</p>
+            <!-- <h2> Its like coming home</h2> -->
         </section>
 
         <nav class="clearfix">
@@ -44,70 +44,98 @@
     </header>
     <h1 class="centerheading">Full Time Temple Missionaies Welcome</h1>
     <main class="container">
-        
-            
-           
-            <section>
-                <figure> <img src="images/studio-hotel.jpg" alt="One Bedroom Studio" />
-                    <figcaption>One Bedroom stutios to help you Relax and Rest in style</figcaption>
-                </figure>
-            </section>
 
-            <section>
-                <figure> <img src="images/1bed-hotel.jpg" alt="Two Bedroom Studio" />
-                    <figcaption>Two Bedroom Suites to share with family and friends</figcaption>
-                </figure>
-            </section>
 
-            <section>
-                <figure> <img src="images/2bed-hotel.jpg" alt="Three Bedroom Studio" />
-                    <figcaption>Three Bedroom Suites</figcaption>
-                </figure>
-            </section>
 
-            <section>
-                <figure> <img src="images/kitchen-hotel.jpg" alt="Kitchen" />
-                    <figcaption>Full Kitchen</figcaption>
-                </figure>
-            </section>
+        <section>
+            <figure> <img src="images/studio-hotel.jpg" alt="One Bedroom Studio" />
+                <figcaption>One Bedroom stutios to help you Relax and Rest in style</figcaption>
+            </figure>
+        </section>
 
-    
+        <section>
+            <figure> <img src="images/1bed-hotel.jpg" alt="Two Bedroom Studio" />
+                <figcaption>Two Bedroom Suites to share with family and friends</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <figure> <img src="images/2bed-hotel.jpg" alt="Three Bedroom Studio" />
+                <figcaption>Three Bedroom Suites</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <figure> <img src="images/kitchen-hotel.jpg" alt="Kitchen" />
+                <figcaption>Full Kitchen</figcaption>
+            </figure>
+        </section>
+
+
     </main>
-    
-            <!-- contact us section -->
-           
-            <form>
-                    <h2 class="headings">Questions?</h2>
-                <label> Name: (Required)</label><br>
-                <input type="text" name="fullname" pattern="[A-Za-z ]" required>
 
-                <label>Email: (Required)</label> <br>
-                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    <!-- contact us section -->
 
-                <label>Phone number: (Required)</label><br>
-                <input type="tel" name="phonenumber" required>
+    <form>
+        <h2 class="headings">Questions?</h2>
+        <label for="name"> Name: (Required)</label>
+        <input type="text" id="name" name="fullname" pattern="[a-zA-Z ]+" required>
 
-                <label>Additional Information or Comments</label><br>
+        <label for="email">Email: (Required)</label>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 
-                <textarea rows=5 cols=40>Comments</textarea> <br>
+        <label for="phone">Phone number: (Required)</label>
+        <input type="tel" id="phone" name="phonenumber" required>
 
-                <input type="submit" formaction="thankyou.html" />
+        <label for="comments">Additional Information or Comments</label>
 
-            </form>
+        <textarea rows=5 cols=40 id="comments" placeholder="Comments"></textarea>
 
-            <section>
-                <div class="contact">
+        <input type="submit" formaction="thankyou.html" />
+
+    </form>
+
+
+
+
+    <section>
+        <div class="contact">
+
+                <!-- <form>
+                        <h2 class="headings">Questions?</h2>
+                        <label for="name"> Name: (Required)</label>
+                        <input type="text" id="name" name="fullname" pattern="[a-zA-Z ]+" required>
+                
+                        <label for="email">Email: (Required)</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                
+                        <label for="phone">Phone number: (Required)</label>
+                        <input type="tel" id="phone" name="phonenumber" required>
+                
+                        <label for="comments">Additional Information or Comments</label>
+                
+                        <textarea rows=5 cols=40 id="comments" placeholder="Comments"></textarea>
+                
+                        <input type="submit" formaction="thankyou.html" />
+                
+                    </form>
+                 -->
+                
+            
+            <div>
                     <h3>Contact Information</h3>
-                    <div>
-                        <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
-                        <p>909-555-5555</p>
-                        <p>Email: <a href="mailto:info@eefmarketing.com">Email Us</a></p>
+                <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                <p>909-555-5555</p>
+                <p>Email: <a href="mailto:info@eefmarketing.com">Email Us</a></p>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800+Montgomery+Ln%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1563837245128!5m2!1sen!2sus"
+               allowfullscreen ></iframe>
 
-                    </div>
+            </div>
 
-                </div>
+        </div>
 
-            </section>
+    </section>
 
     <footer>
 
