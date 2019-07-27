@@ -2,7 +2,7 @@
 @media only screen and (min-width: 700px) {
   /*.navigation li:first-child { display: none;	}*/
 	.navigation li { display: inline-block; margin-right: 1rem;}	
-	.navigation li a {   color: #000000;}
+	.navigation li a {   color: #f8d804;}
  
 nav ul.responsive {
   display: flex;

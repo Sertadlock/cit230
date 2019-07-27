@@ -35,7 +35,7 @@ nav button {
 
 nav {
     overflow: hidden;
-    background-color: #968686;
+    background-color: #292c49fd;
   }
      
   nav ul{
@@ -70,7 +70,7 @@ nav ul.responsive li {
   nav a {
   
     display: block;
-    color: #000000;
+    color: #f8d804;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -80,7 +80,7 @@ nav ul.responsive li {
   
   .active {
     background-color: rgb(102, 83, 206);
-    color: #000000;
+    color: #f8d804;
   }
 
   nav a:hover {
@@ -264,7 +264,7 @@ label {
 }
  
 input {
-  color: #000000;
+  color: #f8d804;
   padding: 5px;
   background-color: #0a4c80;
   margin-bottom: 5px;
@@ -272,7 +272,7 @@ input {
 }
 
 textarea {
-  color: #000000;
+  color: #f8d804;
   padding: 5px;
   background-color: #0a4c80;
   margin-bottom: 10px;
